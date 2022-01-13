@@ -8,6 +8,10 @@
 
 [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true)
 
+| 🎵 Now Playing                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ |
+| <a href="https://status.nmoo.dev/now-playing?open"><img src="https://status.nmoo.dev/now-playing" width="540" height="64"></a> |
+
 <h2>🏆 Github Profile Trophy</h2></a>
 <a href="https://github.com/martijnlindeman/github-profile-trophy">
   <img height="180em" src="https://github-profile-trophy.vercel.app/?username=martijnlindeman&column=8&theme=gruvbox&no-frame=true"/>
