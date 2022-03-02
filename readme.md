@@ -11,7 +11,6 @@
 | [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true) |
 
 
-  <img height="180em" src="https://github-profile-trophy.vercel.app/?username=martijnlindeman&column=8&theme=gruvbox&no-frame=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=martijnlindeman&show_icons=true&theme=tokyonight"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=martijnlindeman&layout=compact&theme=tokyonigh"/>
 </a>
