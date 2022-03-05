@@ -18,10 +18,8 @@
     <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.herokuapp.com/github/followers/martijnlindeman?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/></a>
   <a href="https://github.com/MartijnLindeman">
     <img alt="views" title="GitHub profile views" src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=martijnlindeman.martijnlindeman&color=7b007e&lcolor=630366&style=for-the-badge&logo=Aiqfome"/></a>
-</p>
-<p align="center">
-<a href="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true">
-<img alt="views" title="GitHub profile views" src="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false"/></a>
+   <a href="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true">
+     <img alt="views" title="GitHub profile views" src="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false"/></a>
 </p>
 
 ## 🔥 Stats
