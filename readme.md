@@ -16,7 +16,7 @@
     <img alt="total stars" title="Total stars on GitHub" src="https://custom-icon-badges.herokuapp.com/badge/dynamic/json?logo=star&color=%23E05D44&labelColor=CE4630&label=Stars&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/martijnlindeman"/></a>
   <a href="https://github.com/MartijnLindeman">
     <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.herokuapp.com/github/followers/martijnlindeman?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/></a>
-  <a href="https://github.com/fastboot">
+  <a href="https://github.com/MartijnLindeman">
     <img alt="views" title="GitHub profile views" src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=martijnlindeman.martijnlindeman&color=7b007e&lcolor=630366&style=for-the-badge&logo=Aiqfome"/></a>
 </p>
 
