@@ -1,8 +1,6 @@
 <!-- Social icons section -->
 <p align="center">
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://martijn-lindeman.com/" alt="Martijn-lindeman.com"><img width="32px" src="assets/Website-Icon-2.png"/></a>
-  &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.linkedin.com/in/martijn-lindeman1/" alt="linkedin"><img width="32px" src="assets/linkedin.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://twitter.com/LindemanMartijn"><img width="32px" alt="twitter" title="twitter" src="assets/twitter.png"></a>
@@ -25,6 +23,10 @@
    <a href="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true">
      <img alt="views" title="🎵 Now Playing" src="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false"/></a>
 </p>
+
+## 👨‍💻 About me
+
+- 💻 My [website](https://martijn-lindeman.com/) (In development)
 
 ## 🔥 Stats
 
