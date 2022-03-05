@@ -20,15 +20,17 @@
     <img alt="views" title="GitHub profile views" src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=martijnlindeman.martijnlindeman&color=7b007e&lcolor=630366&style=for-the-badge&logo=Aiqfome"/></a>
 </p>
 
+<p align="center">
+| 🎵 Now Playing                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ |
+| [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true) |
+</p>
+
 ## 🔥 Stats
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img alt="streak" title="streak" src="https://github-readme-stats.vercel.app/api?username=martijnlindeman&show_icons=true&theme=tokyonight" height="160"/>
   </a>
-
-| 🎵 Now Playing                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------ |
-| [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true) |
 
 ## 🏗️ Contributions   
 
