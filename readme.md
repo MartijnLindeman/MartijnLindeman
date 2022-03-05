@@ -22,8 +22,9 @@
 <p align="center">
 | 🎵 Now Playing                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------ |
+| [![spotify-github-profile]
    <a href="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true">
-     <img alt="views" title="🎵 Now Playing" src="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false"/></a>
+     <img alt="views" title="🎵 Now Playing" src="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false"/></a>|
 </p>
 
 ## 🔥 Stats
