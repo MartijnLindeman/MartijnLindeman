@@ -1,11 +1,11 @@
 <!-- Social icons section -->
 <p align="center">
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://www.linkedin.com/in/martijn-lindeman1/" alt="linkedin"><img width="32px" src="assets/linkedin.png"/></a>
+  <a href="https://www.linkedin.com/in/martijn-lindeman1" alt="linkedin"><img width="32px" src="assets/linkedin.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://twitter.com/LindemanMartijn"><img width="32px" alt="twitter" title="twitter" src="assets/twitter.png"></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://www.instagram.com/martijn.lindeman/"><img width="32px" alt="instagram" title="instagram" src="assets/instagram.png"/></a>
+  <a href="https://www.instagram.com/martijn.lindeman"><img width="32px" alt="instagram" title="instagram" src="assets/instagram.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://open.spotify.com/user/81beo555eaqse93ughc05dqx4"><img width="32px" alt="spotify" title="spotify" src="assets/spotify.png"/></a>
 </p>
@@ -23,6 +23,10 @@
    <a href="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&redirect=true">
      <img alt="views" title="🎵 Now Playing" src="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false"/></a>
 </p>
+
+## 👨🏻‍💻 About me
+
+- 💻 My [website](https://martijn-lindeman.com/) (In development)
 
 ## 🔥 Stats
 
@@ -48,6 +52,7 @@
 <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="30px"></span>&nbsp;
 <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30px"></span>&nbsp;
 <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" width="30px"></span>&nbsp;
+<span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="30px"></span>&nbsp;
 <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="30px"></span>&nbsp;
 <span><img src="assets/aws.png" width="30px"></span>
 <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="30px"></span>&nbsp;
