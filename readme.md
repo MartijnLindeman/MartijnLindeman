@@ -22,7 +22,7 @@
     <img alt="views" title="GitHub profile views" src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=martijnlindeman.martijnlindeman&color=7b007e&lcolor=630366&style=for-the-badge&logo=Aiqfome"/></a>
 </p>
 <p align="center">
-<img src="https://spotify-playing-now-readme.vercel.app/api/now-playing" width="540" height="52">
+<img src="https://now-playing-spotify-sigma.vercel.app/" width="540" height="52">
 
 </p>
 
