@@ -13,3 +13,9 @@ jobs:
       - uses: martijnlindeman/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 7
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
