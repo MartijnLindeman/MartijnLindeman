@@ -35,6 +35,8 @@
 ![Metrics](https://metrics.lecoq.io/martijnlindeman?template=classic&activity=1&activity.limit=5&activity.load=300&activity.days=14&activity.visibility=all&activity.timestamps=false&activity.filter=all&config.timezone=Europe%2FLondon)
 
 ![Metrics](/metrics.svg)
+![Metrics](/metrics.plugin.activity.svg)
+
 
 ## 🏗️ Contributions   
 
