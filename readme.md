@@ -31,8 +31,9 @@
 - 💻 My [website](https://martijn-lindeman.com/) (In development)
 
 ## 🔥 Stats
+<img align="center" src="/github-metrics.svg" alt="Metrics" width="400">
 
-![Metrics](/github-metrics.svg)
+
 ![Metrics](/metrics.plugin.activity.svg)
 
 
