@@ -34,9 +34,6 @@
 
 ![Metrics](https://metrics.lecoq.io/martijnlindeman?template=classic&config.timezone=Europe%2FLondon)
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img alt="streak" title="streak" src="https://github-readme-stats.vercel.app/api?username=martijnlindeman&show_icons=true&theme=tokyonight" height="160"/>
-  </a>
 
 ## 🏗️ Contributions   
 
