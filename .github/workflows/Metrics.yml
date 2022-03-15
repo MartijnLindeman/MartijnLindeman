@@ -15,7 +15,7 @@ jobs:
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
-          filename: github-metrics.svg
+          filename: 🔥github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           # Options
           user: martijnlindeman
@@ -27,7 +27,7 @@ jobs:
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
-          filename: metrics.plugin.activity.svg
+          filename: ⚡metrics.plugin.activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_activity: yes
@@ -41,11 +41,9 @@ jobs:
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
-          filename: Starred.topics.svg
+          filename: 📌starred.topics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_stars: yes
-          plugin_stars_limit: 4
           plugin_topics: yes
           plugin_topics_limit: 15
           plugin_topics_mode: icons
