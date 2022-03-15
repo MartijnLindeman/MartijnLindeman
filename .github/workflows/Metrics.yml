@@ -31,3 +31,24 @@ jobs:
           plugin_activity_limit: 5
           plugin_activity_load: 300
           plugin_activity_visibility: all
+          
+          
+      # 📰 Recent activity
+
+      # Display recent activity
+      - name: 📰 Activity plugin
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@master
+        with:
+          filename: metrics.plugin.activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 7
+          plugin_activity_days: 0
+          plugin_activity_filter: issue, pr, release, fork, review, ref/create
+          plugins_errors_fatal: ${{ github.repository == 'martijnlindeman/martijnlindeman' }}
+          output_action: pull-request
+          delay: 120
+
+      # ======================================================================================
