@@ -26,14 +26,13 @@
      <img alt="Spotify Now Playing" title="🎵 Now Playing" src="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false"/></a>
 </p>
 
-![Metrics](https://metrics.lecoq.io/martijnlindeman?template=classic&config.timezone=Europe%2FLondon)
-
-
 ## 👨🏻‍💻 About me
 
 - 💻 My [website](https://martijn-lindeman.com/) (In development)
 
 ## 🔥 Stats
+
+![Metrics](https://metrics.lecoq.io/martijnlindeman?template=classic&config.timezone=Europe%2FLondon)
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img alt="streak" title="streak" src="https://github-readme-stats.vercel.app/api?username=martijnlindeman&show_icons=true&theme=tokyonight" height="160"/>
