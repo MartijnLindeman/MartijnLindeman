@@ -1,7 +1,7 @@
 name: Metrics
 on:
-  # Schedule hourly updates
-  schedule: [{cron: "0 * * * *"}]
+  # Schedule daily updates
+  schedule: [{cron: "0 0 * * *"}]
   # (optional) Run workflow manually
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
@@ -10,32 +10,6 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: martijnlindeman/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # Options
-          user: martijnlindeman
-          template: classic
-          base: header, activity, community, repositories
-          config_timezone: Europe/London
-          config_display: large
-          # Achivements
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
-          # Follow up issues and pull request
-          plugin_followup: yes
-          plugin_followup_sections: user
-          # Coding habits
-          plugin_habits: yes
-          plugin_habits_from: 1000
-          plugin_habits_days: 30
-          plugin_habits_charts: yes
-          # Isometric calendar
-          plugin_isocalendar: yes
-          # Language used
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-          # Config order
-          config_order: base.header, wakatime, base.activity+community, base.repositories, languages, followup, habits, isocalendar
