@@ -33,6 +33,7 @@
 ## 🔥 Stats
    
   <img align="center" src="/🔥github-metrics.svg" alt="Metrics" width="405">
+  <img align="center" src="/📌starred.topics.svg" alt="Metrics" width="405">
 
 ## 🏗️ Contributions   
 
