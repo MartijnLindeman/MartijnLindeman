@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Github-metrics
+      - name: 🔥 Github-metrics
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
@@ -23,7 +23,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/London
 
-      - name: Plugin_activity
+      - name: ⚡ Plugin_activity
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
@@ -36,3 +36,17 @@ jobs:
           plugin_activity_limit: 7
           plugin_activity_load: 300
           plugin_activity_visibility: all
+
+      - name: 📌 plugin_stars
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@latest
+        with:
+          filename: Starred.topics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stars: yes
+          plugin_stars_limit: 4
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: icons
+          plugin_topics_sort: stars
