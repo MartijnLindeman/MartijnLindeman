@@ -3,7 +3,7 @@
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://martijn-lindeman.com" alt="My Website"><img width="32px" src="assets/512-.svg"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://www.linkedin.com/in/martijn-lindeman1" alt="linkedin"><img width="32px" src="assets/linkedin.png"/></a>
+  <a href="https://www.linkedin.com/in/martijn-lindeman" alt="linkedin"><img width="32px" src="assets/linkedin.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://twitter.com/LindemanMartijn"><img width="32px" alt="twitter" title="twitter" src="assets/twitter.png"></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
