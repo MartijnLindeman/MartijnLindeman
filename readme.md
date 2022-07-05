@@ -58,6 +58,6 @@
 <span><img title="Ruby" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" width="30px"></span>&nbsp;
 <span><img title="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="30px"></span>&nbsp;
 <span><img title="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="30px"></span>&nbsp;
-<span><img title="AWS" src="assets/aws.png" width="30px"></span>
 <span><img title="Azure" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="30px"></span>&nbsp;
+<span><img title="AWS" src="assets/aws.png" width="30px"></span>
 <span><img title="Nginx" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="30px"></span>&nbsp;
