@@ -30,6 +30,10 @@
 
 - 💻 My [website](https://martijn-lindeman.com/) (In development)
 
+## 📃Certifications
+
+ - [Certification name](link)
+
 ## 🔥 Stats
    
   <img align="center" src="/🔥github-metrics.svg" alt="Metrics" width="405">
@@ -88,6 +92,8 @@
 <a href="https://www.nginx.com/">
 <span><img title="Nginx" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="30px"></span></a>
 </a>
+
+
 
 ## ☕ Buy me a coffee
 <a href="https://ko-fi.com/martijnlindeman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" width="150" ></a>
