@@ -32,7 +32,7 @@
 
 ## 📃Certifications
 
- - [Certification name](link)
+ - [Certification name(Coming soon)](link)
 
 ## 🔥 Stats
    
