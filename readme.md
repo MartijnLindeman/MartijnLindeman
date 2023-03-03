@@ -28,11 +28,11 @@
 
 ## 👨🏻‍💻 About me
 
-- 💻 My [website](https://martijn-lindeman.com/) (In development)
+- 💻 My [website](https://martijn-lindeman.com/) build with React.js / Next.js <b>(In development)</b>
 
-## 📃Certifications
+## 📃Certification
 
- - [Certification name(Coming soon)](link)
+ - My Certification (Coming soon)
 
 ## 🔥 Stats
    
