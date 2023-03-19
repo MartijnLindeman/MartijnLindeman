@@ -92,7 +92,12 @@
 <a href="https://www.nginx.com/">
 <span><img title="Nginx" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="30px"></span></a>
 </a>
-
+<a href="https://www.adobe.com/ie/products/photoshop.html">
+<span><img title="Photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" width="30px"></span></a>
+</a>
+<a href="https://inkscape.org/">
+<span><img title="Inkscape" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-original.svg" width="30px"></span></a>
+</a>
 
 
 ## ☕ Buy me a coffee
