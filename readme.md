@@ -30,9 +30,6 @@
 
 - 💻 My [website](https://martijn-lindeman.com/) build with React.js / Next.js <b>(In development)</b>
 
-## 📃Certification
-
- - My Certification (Coming soon)
 
 ## 🔥 Stats
    
