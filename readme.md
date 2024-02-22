@@ -3,9 +3,9 @@
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://martijn-lindeman.com" alt="My Website"><img width="32px" src="assets/512-.svg"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://www.linkedin.com/in/martijn-lindeman" alt="linkedin"><img width="32px" src="assets/linkedin.png"/></a>
+  <a href="https://www.linkedin.com/in/martijn-lindeman" alt="linkedin"><img width="32px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://twitter.com/LindemanMartijn"><img width="32px" alt="twitter" title="twitter" src="assets/twitter.png"></a>
+  <a href="https://twitter.com/LindemanMartijn"><img width="32px" alt="twitter" title="twitter" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.instagram.com/martijn.lindeman"><img width="32px" alt="instagram" title="instagram" src="assets/instagram.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
