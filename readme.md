@@ -16,9 +16,9 @@
 <p align="center">
   <a href="https://github.com/MartijnLindeman?tab=repositories">
     <img alt="total stars" title="Total stars on GitHub" src="https://custom-icon-badges.herokuapp.com/badge/dynamic/json?logo=star&color=%23e06666&labelColor=cc0000&label=Stars&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/martijnlindeman"/></a>
-  <a href="https://github.com/MartijnLindeman">
+  <a href="https://github.com/MartijnLindeman?tab=follower">
     <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.herokuapp.com/github/followers/martijnlindeman?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Followers&logoColor=white"/></a>
-  <a href="https://github.com/MartijnLindeman?tab=followers">
+  <a href="https://github.com/MartijnLindeman">
     <img alt="views" title="GitHub profile views" src="https://vbr.nathanchung.dev/badge?page_id=MartijnLindeman&color=7b007e&lcolor=630366&style=for-the-badge&logo=github"/></a>
 </p>
 <p align="center">
