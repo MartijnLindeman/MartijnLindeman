@@ -26,17 +26,17 @@
      <img alt="Spotify Now Playing" title="🎵 Now Playing" src="https://spotify-github-profile.vercel.app/api/view?uid=81beo555eaqse93ughc05dqx4&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false"/></a>
 </p>
 
-## 👨🏻‍💻 About me
-
-- 💻 My [website](https://martijn-lindeman.com/) build with React.js / Next.js <b>(In development)</b>
-
 
 ## 🔥 Stats
    
+  <a href="#">
   <img align="center" src="/🔥github-metrics.svg" alt="Metrics" width="405">
+</a>
+
   <img align="center" src="/📌starred.topics.svg" alt="Metrics" width="500">
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=martijnlindeman&theme=radical&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats-git-main-martijnlindeman.vercel.app/api/top-langs/?username=martijnlindeman&theme=radical&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+
 
 
 ## 🏗️ Contributions   
@@ -96,6 +96,3 @@
 <span><img title="Inkscape" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-original.svg" width="30px"></span></a>
 </a>
 
-
-## ☕ Buy me a coffee
-<a href="https://ko-fi.com/martijnlindeman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" width="150" ></a>
