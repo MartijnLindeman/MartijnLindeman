@@ -25,7 +25,7 @@ jobs:
           plugin_music_provider: spotify
           plugin_music_mode: recent
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
-          plugin_music_time_range: long
+          plugin_music_time_range: short
           plugin_music_top_type: tracks
 
 
