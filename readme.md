@@ -33,17 +33,19 @@
   <img align="center" src="/🔥github-metrics.svg" alt="Metrics" width="405">
 </a>
 <a href="#">
-  <img align="top" src="/🎵Spotify - Top tracks.svg" alt="Metrics" width="405">
-</a>
-<a href="#">
   <img align="top" src="/⚡recent-activity.svg" alt="Metrics" width="405">
 </a>
 <a href="#">
-  <img align="top" src="/🏆 achievements.svg" alt="Metrics" width="405">
+  <img align="top" src="/🎵Spotify - Top tracks.svg" alt="Metrics" width="405">
+</a>
+<a href="#">
+ 
 </a>
 
 
 ## 🔧 Skills and Tools
+
+<p align="center">
 <a href="https://reactjs.org/">
 <span><img title="React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="30px"></span></a>
 </a>
@@ -95,4 +97,4 @@
 <a href="https://inkscape.org/">
 <span><img title="Inkscape" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-original.svg" width="30px"></span></a>
 </a>
-
+</p>
