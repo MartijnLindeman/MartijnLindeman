@@ -42,25 +42,16 @@
   <img align="top" src="/🏆 achievements.svg" alt="Metrics" width="405">
 </a>
 
-## 🏗️ Contributions   
-
-  <a href="https://git.io/streak-stats">
-  <img alt="streak" title="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=martijnlindeman&theme=radical&hide_border=true&count_private=true" height="160"/>
-  </a>
-
 
 ## 🔧 Skills and Tools
 <a href="https://reactjs.org/">
-<span><img title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="30px"></span></a>
+<span><img title="React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="30px"></span></a>
 </a>
 <a href="https://nodejs.org/">
-<span><img title="Node.Js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" width="30px"></span></a>
+<span><img title="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" width="30px"></span></a>
 </a>
 <a href="https://developer.mozilla.org/">
 <span><img title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="30px"></span></a>
-</a>
-<a href="https://git-scm.com/">
-<span><img title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="30px"></span></a>
 </a>
 <a href="https://developer.mozilla.org/">
 <span><img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" width="30px"></span></a>
@@ -77,11 +68,17 @@
 <a href="https://www.ruby-lang.org/">
 <span><img title="Ruby" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" width="30px"></span></a>
 </a>
-<a href="https://firebase.google.com/">
-<span><img title="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="30px"></span></a>
-</a>
 <a href="https://www.linux.org/">
 <span><img title="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="30px"></span></a>
+</a>
+<a href="https://git-scm.com/">
+<span><img title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="30px"></span></a>
+</a>
+<a href="https://firebase.google.com/">
+<span><img title="Google Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="30px"></span></a>
+</a>
+<a href="https://vercel.com/">
+<span><img title="Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="30px"></span></a>
 </a>
 <a href="https://azure.microsoft.com/">
 <span><img title="Azure" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="30px"></span></a>
@@ -93,7 +90,7 @@
 <span><img title="Nginx" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="30px"></span></a>
 </a>
 <a href="https://www.adobe.com/ie/products/photoshop.html">
-<span><img title="Photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" width="30px"></span></a>
+<span><img title="Photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" width="30px"></span></a>
 </a>
 <a href="https://inkscape.org/">
 <span><img title="Inkscape" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-original.svg" width="30px"></span></a>
