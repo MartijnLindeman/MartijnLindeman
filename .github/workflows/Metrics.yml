@@ -20,9 +20,9 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
           base: header, activity, community, repositories, metadata
+          config_order: base.header, activity, community, , repositories, metadata, languages, notable, discussions, topics
           config_timezone: Europe/London
           base_indepth: yes
-          config_order: base.header, isocalendar, languages, notable, discussions, topics
           output_action: gist
           plugin_languages: yes
           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c, c++, python, ejs
@@ -49,7 +49,7 @@ jobs:
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
           plugin_music_time_range: long
           plugin_music_top_type: tracks
-          plugin_music_limit: 5
+          plugin_music_limit: 10
 
       - name: 🏆 Achievements
         if: ${{ success() || failure() }}
@@ -72,6 +72,6 @@ jobs:
           plugin_activity: yes
           plugin_activity_days: 14
           plugin_activity_filter: all
-          plugin_activity_limit: 7
+          plugin_activity_limit: 5
           plugin_activity_load: 300
           plugin_activity_visibility: all
