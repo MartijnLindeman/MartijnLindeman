@@ -11,40 +11,97 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: 🔥 Github-metrics
+      - name: 🦑 Medias
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
-          filename: 🔥github-metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          # Options
-          user: martijnlindeman
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Europe/London
-
-      - name: ⚡ Plugin_activity
-        if: ${{ success() || failure() }}
-        uses: martijnlindeman/metrics@latest
-        with:
-          filename: ⚡metrics.plugin.activity.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          filename: medias.svg
+          token: ${{ secrets.TOKEN }}
           base: ""
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_limit: 7
-          plugin_activity_load: 300
-          plugin_activity_visibility: all
+          config_order: anilist, music
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
+          plugin_anilist: yes
+          plugin_anilist_medias: anime
+          plugin_anilist_sections: favorites, characters
+          plugin_anilist_limit: 2
+          plugin_anilist_limit_characters: 22
+          plugin_music: yes
+          plugin_music_playlist: ${{ secrets.PLAYLIST }}
+          plugin_music_limit: 9
 
-      - name: 📌 plugin_stars
+      - name: 🦑 Achievements
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
-          filename: 📌starred.topics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          filename: achievements.svg
+          token: ${{ secrets.TOKEN }}
           base: ""
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_fortune: yes
+
+      - name: 🦑 Sponsors
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@latest
+        with:
+          filename: sponsors.svg
+          token: ${{ secrets.TOKEN }}
+          base: ""
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
+          plugin_sponsors: yes
+          plugin_sponsors_past: yes
+          plugin_sponsorships: yes
+          plugin_sponsorships_sections: amount
+
+      - name: 🦑 General
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@latest
+        with:
+          filename: general.svg
+          token: ${{ secrets.TOKEN }}
+          base: header
+          base_indepth: yes
+          config_order: base.header, isocalendar, languages, notable, discussions, topics
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c, c++, python, ejs
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 2
           plugin_topics: yes
-          plugin_topics_limit: 15
+          plugin_topics_limit: 0
           plugin_topics_mode: icons
-          plugin_topics_sort: stars
+          plugin_notable: yes
+          plugin_discussions: yes
+          
+      - name: 🦑 Splatoon
+        uses: martijnlindeman/metrics@latest
+        if: ${{ success() || failure() }}
+        with:
+          filename: splatoon.svg
+          token: ${{ secrets.TOKEN }}
+          base: ""
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
+          plugin_splatoon: yes
+          plugin_splatoon_token: ${{ secrets.SPLATOON_TOKEN }}
+          plugin_splatoon_statink: yes
+          plugin_splatoon_statink_token: ${{ secrets.SPLATOON_STATINK_TOKEN }}
+          plugin_splatoon_sections: salmon-run
+          plugin_splatoon_salmon_limit: 2
+          extras_css: |
+            h2 { display: none !important; }
+            .match:not(:last-child) { padding-bottom: 4px; }
+
+
+
+
+
+
