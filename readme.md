@@ -28,16 +28,19 @@
 
 
 ## 🔥 Stats
-   
-  <a href="#">
+
+<a href="#">
   <img align="center" src="/🔥github-metrics.svg" alt="Metrics" width="405">
 </a>
-
-  <img align="center" src="/📌starred.topics.svg" alt="Metrics" width="500">
-
-[![Top Langs](https://github-readme-stats-git-main-martijnlindeman.vercel.app/api/top-langs/?username=martijnlindeman&theme=radical&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
-
-
+<a href="#">
+  <img align="top" src="/🎵Spotify - Top tracks.svg" alt="Metrics" width="405">
+</a>
+<a href="#">
+  <img align="top" src="/⚡recent-activity.svg" alt="Metrics" width="405">
+</a>
+<a href="#">
+  <img align="top" src="/🏆 achievements.svg" alt="Metrics" width="405">
+</a>
 
 ## 🏗️ Contributions   
 
