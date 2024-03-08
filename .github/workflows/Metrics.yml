@@ -1,7 +1,7 @@
 name: Metrics
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
+  # 🌏 Think about the planet! No need to update stats too frequently
+  schedule: [{cron: "0 * * * *"}]
   # (optional) Run workflow manually
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
@@ -9,11 +9,47 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
-    permissions:
-      contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+
+      - name: 🔥 Github-metrics
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@latest
         with:
+          filename: 🔥github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          # Options
+          user: martijnlindeman
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Europe/London
+
+      - name: ⚡ Plugin_activity
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@latest
+        with:
+          filename: ⚡metrics.plugin.activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 7
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
+
+      - name: 📌 plugin_stars
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@latest
+        with:
+          filename: 📌starred.topics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: icons
+          plugin_topics_sort: stars
+
+
+
+
+
