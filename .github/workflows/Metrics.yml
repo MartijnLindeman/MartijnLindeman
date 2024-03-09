@@ -57,12 +57,11 @@ jobs:
           filename: 🎵 Spotify - Recently listened.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          config_order: music
-          output_action: gist
           plugin_music: yes
           plugin_music_provider: spotify
           plugin_music_mode: recent
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
+          plugin_music_played_at: yes
 
       - name: 🎵 Spotify - Top artists
         if: ${{ success() || failure() }}
@@ -100,7 +99,7 @@ jobs:
           filename: ⚡ recent-activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          config_order: activity, stars
+          config_order: stars, activity
           plugin_activity: yes
           plugin_activity_days: 14
           plugin_activity_filter: all
