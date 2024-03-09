@@ -3,7 +3,7 @@ on:
   # 🌏 Think about the planet! No need to update stats too frequently
   #  Plugins: https://github.com/lowlighter/metrics/tree/master/source/plugins
   #  To do: repositories, pagespeed?
-  schedule: [{cron: "0 * * * *"}]
+  schedule: [{cron: "0 16 * * *"}]
   # (optional) Run workflow manually
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
@@ -56,16 +56,12 @@ jobs:
           filename: 🎵 Spotify - Recently listened.svg
           token: NOT_NEEDED
           base: ""
+          #  api has / to be fixed  'Insufficient client scope'
           plugin_music: yes
-          plugin_music_limit: 6
-          plugin_music_mode: recent
-          plugin_music_played_at: yes
-          plugin_music_playlist: https://open.spotify.com/embed/playlist/69gzjQcRJvfSnA1Rf8bhAK
           plugin_music_provider: spotify
+          plugin_music_mode: recent
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
-          plugin_music_time_range: short
-          plugin_music_top_type: tracks
-          plugin_music_user: elrastaok
+          plugin_music_played_at: yes
 
       - name: 🎵 Spotify - Top artists
         if: ${{ success() || failure() }}
