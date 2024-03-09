@@ -1,4 +1,3 @@
-
 name: Metrics
 on:
   # 🌏 Think about the planet! No need to update stats too frequently
@@ -19,8 +18,8 @@ jobs:
           filename: 🔥github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
-          base: base.header, activity, community, repositories, languages, notable, discussions, topics, metadata
-          config_order: base.header, activity, community, repositories, languages, notable, discussions, topics, metadata
+          base: header, activity, community, repositories, metadata
+          config_order: base.header, activity, community, repositories, metadata, languages, notable, discussions, topics
           config_timezone: Europe/London
           base_indepth: yes
           output_action: gist
@@ -49,7 +48,7 @@ jobs:
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
           plugin_music_time_range: long
           plugin_music_top_type: tracks
-          plugin_music_limit: 10
+          plugin_music_limit: 5
 
       - name: 🏆 Achievements
         if: ${{ success() || failure() }}
@@ -75,12 +74,3 @@ jobs:
           plugin_activity_limit: 5
           plugin_activity_load: 300
           plugin_activity_visibility: all
-          config_order: music
-          output_action: gist
-          plugin_music: yes
-          plugin_music_provider: spotify
-          plugin_music_mode: top
-          plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
-          plugin_music_time_range: long
-          plugin_music_top_type: tracks
-          plugin_music_limit: 10
