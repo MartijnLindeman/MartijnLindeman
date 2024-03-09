@@ -1,6 +1,8 @@
 name: Metrics
 on:
   # 🌏 Think about the planet! No need to update stats too frequently
+  #  Plugins: https://github.com/lowlighter/metrics/tree/master/source/plugins
+  #  To do: repositories, pagespeed?
   schedule: [{cron: "0 * * * *"}]
   # (optional) Run workflow manually
   workflow_dispatch:
@@ -57,6 +59,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           output_action: gist
+          config_order: achievements
           plugin_achievements: yes
           plugin_achievements_display: compact
          
@@ -67,13 +70,10 @@ jobs:
           filename: ⚡ recent-activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          config_order: activity, music
+          config_order: activity
           plugin_activity: yes
           plugin_activity_days: 14
           plugin_activity_filter: all
           plugin_activity_limit: 5
           plugin_activity_load: 300
           plugin_activity_visibility: all
-          plugin_music_time_range: long
-          plugin_music_top_type: tracks
-          plugin_music_limit: 5
