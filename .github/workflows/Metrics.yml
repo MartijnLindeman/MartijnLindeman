@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: 🔥 Github-metrics
+      - name: 📊 Github-metrics
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
-          filename: 🔥 github-metrics.svg
+          filename: 📊 github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
           base: header, activity, community, repositories, metadata, languages, notable, discussions, topics
@@ -115,3 +115,15 @@ jobs:
   #       plugin_music_time_range: long
   #       plugin_music_top_type: tracks
   #       plugin_music_limit: 5
+
+      - name: ⏱️ Google PageSpeed
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@latest
+        with:
+          filename: ⏱️ Google PageSpeed.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_screenshot: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://www.martijn-lindeman.com/
