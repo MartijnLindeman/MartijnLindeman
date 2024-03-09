@@ -33,14 +33,33 @@
   <img align="center" src="/🔥 github-metrics.svg" alt="Metrics" width="405">
 </a>
 <a href="#">
-  <img align="top" src="/⚡recent-activity.svg" alt="Metrics" width="405">
+  <img align="top" src="/⚡ recent-activity.svg" alt="Metrics" width="405">
 </a>
 <a href="#">
   <img align="top" src="/🎵 Spotify - Top tracks.svg" alt="Metrics" width="405">
 </a>
 <a href="#">
- 
 </a>
+
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="/🔥 github-metrics.svg" alt="Metrics" >
+    </td>
+    <td align="center">
+       <img  src="/⚡ recent-activity.svg" alt="Metrics" >
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img  src="/🎵 Spotify - Top tracks.svg" alt="Metrics">
+    </td>
+    <td align="center">
+      <img src="">
+    </td>
+  </tr>
+</table>
 
 
 ## 🔧 Skills and Tools
