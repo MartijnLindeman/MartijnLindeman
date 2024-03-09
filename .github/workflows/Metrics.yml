@@ -63,8 +63,6 @@ jobs:
           plugin_music_provider: spotify
           plugin_music_mode: recent
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
-          plugin_music_time_range: long
-          plugin_music_limit: 5
 
       - name: 🎵 Spotify - Top artists
         if: ${{ success() || failure() }}
@@ -81,6 +79,7 @@ jobs:
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
           plugin_music_time_range: long
           plugin_music_top_type: artists
+          plugin_music_limit: 5
 
       - name: 🏆 Achievements
         if: ${{ success() || failure() }}
