@@ -18,8 +18,7 @@ jobs:
           filename: 🔥 github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
-          base: header, activity, community, repositories, metadata
-          config_order: base.header, activity, community, repositories, metadata, languages, notable, discussions, topics
+          base: base.header, activity, community, repositories, metadata, languages, notable, discussions, topics
           config_timezone: Europe/London
           base_indepth: yes
           output_action: gist
