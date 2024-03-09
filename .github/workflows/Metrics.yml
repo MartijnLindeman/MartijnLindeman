@@ -38,6 +38,7 @@ jobs:
         uses: martijnlindeman/metrics@latest
         with:
           filename: 🎵 Spotify - Top tracks.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_order: music
           output_action: gist
@@ -54,6 +55,7 @@ jobs:
         uses: martijnlindeman/metrics@latest
         with:
           filename: 🎵 Spotify - Recently Listened.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_order: music
           output_action: gist
