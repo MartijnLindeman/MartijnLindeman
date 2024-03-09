@@ -50,11 +50,11 @@ jobs:
           plugin_music_top_type: tracks
           plugin_music_limit: 5
 
-      - name: 🎵 Spotify - Recently Listened
+      - name: 🎵 Spotify - Recently listened
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@latest
         with:
-          filename: 🎵 Spotify - Recently Listened.svg
+          filename: 🎵 Spotify - Recently listened.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_order: music
@@ -63,7 +63,24 @@ jobs:
           plugin_music_provider: spotify
           plugin_music_mode: recent
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
+          plugin_music_time_range: long
           plugin_music_limit: 5
+
+      - name: 🎵 Spotify - Top artists
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@latest
+        with:
+          filename: 🎵 Spotify - Top artists.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          config_order: music
+          output_action: gist
+          plugin_music: yes
+          plugin_music_mode: top
+          plugin_music_provider: spotify
+          plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
+          plugin_music_time_range: long
+          plugin_music_top_type: artists
 
       - name: 🏆 Achievements
         if: ${{ success() || failure() }}
