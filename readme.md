@@ -5,8 +5,6 @@
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.linkedin.com/in/martijn-lindeman" alt="linkedin"><img width="32px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://twitter.com/LindemanMartijn"><img width="32px" alt="twitter" title="twitter" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"></a>
-  &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.instagram.com/martijn.lindeman"><img width="32px" alt="instagram" title="instagram" src="assets/instagram.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://open.spotify.com/user/81beo555eaqse93ughc05dqx4"><img width="32px" alt="spotify" title="spotify" src="assets/spotify.png"/></a>
