@@ -1,7 +1,7 @@
 <!-- Social icons section -->
 <p align="center">
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://martijn-lindeman.com" alt="My Website"><img width="32px" src="assets/512-.svg"/></a>
+  <a href="https://martijn.vercel.app/" alt="My Website"><img width="32px" src="assets/512-.svg"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.linkedin.com/in/martijn-lindeman" alt="linkedin"><img width="32px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
