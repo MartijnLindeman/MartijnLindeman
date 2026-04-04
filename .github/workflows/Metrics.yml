@@ -145,12 +145,12 @@ jobs:
           config_timezone: Europe/Amsterdam
           output_action: gist
           config_order: activity
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_days: 14
-          plugin_activity_visibility: all
-          plugin_activity_timestamps: yes
+     #    plugin_activity: yes
+     #    plugin_activity_limit: 5
+     #    plugin_activity_load: 300
+     #    plugin_activity_days: 14
+     #    plugin_activity_visibility: all
+     #    plugin_activity_timestamps: yes
           # star excluded from filter intentionally
      #    plugin_activity_filter: comment, ref/create, ref/delete, release, issue, pr, review, wiki, fork, member, public
           # ignore common bots to keep the feed clean
