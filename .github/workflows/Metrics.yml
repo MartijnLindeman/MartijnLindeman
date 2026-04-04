@@ -57,25 +57,25 @@ jobs:
           plugin_music_top_type: tracks
           plugin_music_limit: 5
 
-      - name: 🎵 Spotify - Recently listened
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: "🎵 Spotify - Recently listened.svg"
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          config_timezone: Europe/Amsterdam
-          output_action: gist
-          plugins_errors_fatal: yes
-          debug: yes
-          verify: yes
-          # NOTE: may still fail with 'Insufficient client scope' — re-authorize your Spotify
-          # app with the 'user-read-recently-played' scope and regenerate your REFRESH_TOKEN
-          plugin_music: yes
-          plugin_music_provider: spotify
-          plugin_music_mode: recent
-          plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
-          plugin_music_played_at: yes
+    #  - name: 🎵 Spotify - Recently listened
+    #    if: ${{ success() || failure() }}
+    #    uses: lowlighter/metrics@v3.34
+    #    with:
+    #      filename: "🎵 Spotify - Recently listened.svg"
+    #      token: ${{ secrets.METRICS_TOKEN }}
+    #      base: ""
+    #      config_timezone: Europe/Amsterdam
+    #      output_action: gist
+    #      plugins_errors_fatal: yes
+    #      debug: yes
+    #      verify: yes
+    #      # NOTE: may still fail with 'Insufficient client scope' — re-authorize your Spotify
+    #      # app with the 'user-read-recently-played' scope and regenerate your REFRESH_TOKEN
+    #      plugin_music: yes
+    #     plugin_music_provider: spotify
+    #      plugin_music_mode: recent
+    #      plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
+    #      plugin_music_played_at: yes
 
       - name: 🎵 Spotify - Top artists
         if: ${{ success() || failure() }}
