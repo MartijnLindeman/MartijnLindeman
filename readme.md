@@ -27,13 +27,10 @@
 
 ## 🔥 Stats
 
-<table>
+<table align="center">
   <tr>
     <td align="center">
-      <img src="/📊 github-metrics.svg" alt="Metrics" >
-    </td>
-    <td align="center">
-       <img  src="/⚡ recent-activity.svg" alt="Metrics" >
+      <img src="/📊 github-metrics.svg" alt="Metrics">
     </td>
   </tr>
 </table>
