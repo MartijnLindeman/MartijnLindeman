@@ -21,8 +21,9 @@ jobs:
           filename: "📊 github-metrics.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
-          base: header, activity, community, repositories, metadata, languages, notable, discussions, topics
-          config_timezone: Europe/London
+          # FIX: removed 'languages' and 'notable' from base — they are plugins, not base modules
+          base: header, activity, community, repositories, metadata
+          config_timezone: Europe/Amsterdam
           base_indepth: yes
           output_action: gist
           plugin_languages: yes
@@ -41,6 +42,7 @@ jobs:
           filename: "🎵 Spotify - Top tracks.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          config_timezone: Europe/Amsterdam
           config_order: music
           output_action: gist
           plugin_music: yes
@@ -52,12 +54,20 @@ jobs:
           plugin_music_limit: 5
 
       - name: 🎵 Spotify - Recently listened
+        # FIX: added if condition so this step doesn't get skipped when a previous step fails
+        if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@master
         with:
           filename: "🎵 Spotify - Recently listened.svg"
-          token: NOT_NEEDED
+          # FIX: use METRICS_TOKEN instead of NOT_NEEDED for consistency and reliability
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          #  api has / to be fixed  'Insufficient client scope'
+          config_timezone: Europe/Amsterdam
+          # FIX: added output_action so SVG goes to gist instead of being committed to repo
+          output_action: gist
+          # NOTE: this step may still fail with 'Insufficient client scope' — to fix,
+          # re-authorize your Spotify app with the 'user-read-recently-played' scope
+          # and regenerate your REFRESH_TOKEN
           plugin_music: yes
           plugin_music_provider: spotify
           plugin_music_mode: recent
@@ -71,6 +81,7 @@ jobs:
           filename: "🎵 Spotify - Top artists.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          config_timezone: Europe/Amsterdam
           config_order: music
           output_action: gist
           plugin_music: yes
@@ -88,6 +99,7 @@ jobs:
           filename: "🏆 achievements.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          config_timezone: Europe/Amsterdam
           output_action: gist
           config_order: achievements
           plugin_achievements: yes
@@ -100,6 +112,9 @@ jobs:
           filename: "⚡ recent-activity.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          config_timezone: Europe/Amsterdam
+          # FIX: added missing output_action so SVG goes to gist instead of being committed to repo
+          output_action: gist
           config_order: stars, activity
           plugin_activity: yes
           plugin_activity_days: 14
@@ -109,21 +124,17 @@ jobs:
           plugin_activity_visibility: all
           plugin_stars: yes
           plugin_stars_limit: 3
-  #       plugin_music: yes
-  #       plugin_music_provider: spotify
-  #       plugin_music_mode: top
-  #       plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
-  #       plugin_music_time_range: long
-  #       plugin_music_top_type: tracks
-  #       plugin_music_limit: 5
 
       - name: ⏱️ Google PageSpeed
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@master
         with:
           filename: "⏱️ Google PageSpeed.svg"
-          token: NOT_NEEDED
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          config_timezone: Europe/Amsterdam
+          # FIX: added missing output_action so SVG goes to gist instead of being committed to repo
+          output_action: gist
           plugin_pagespeed: yes
           plugin_pagespeed_screenshot: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
