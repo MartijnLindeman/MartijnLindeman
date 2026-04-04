@@ -1,4 +1,3 @@
-
 name: Metrics
 on:
   # 🌏 Think about the planet! No need to update stats too frequently
@@ -15,7 +14,6 @@ jobs:
     permissions:
       contents: write
     steps:
-
       - name: 📊 Github-metrics
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@master
@@ -94,7 +92,7 @@ jobs:
           config_order: achievements
           plugin_achievements: yes
           plugin_achievements_display: compact
-         
+
       - name: ⚡ Recent activity
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@master
