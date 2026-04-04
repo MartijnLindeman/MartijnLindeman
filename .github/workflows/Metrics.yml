@@ -21,7 +21,6 @@ jobs:
           filename: "📊 github-metrics.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
-          # FIX: removed 'languages' and 'notable' from base — they are plugins, not base modules
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Amsterdam
           base_indepth: yes
@@ -54,16 +53,13 @@ jobs:
           plugin_music_limit: 5
 
       - name: 🎵 Spotify - Recently listened
-        # FIX: added if condition so this step doesn't get skipped when a previous step fails
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@master
         with:
           filename: "🎵 Spotify - Recently listened.svg"
-          # FIX: use METRICS_TOKEN instead of NOT_NEEDED for consistency and reliability
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_timezone: Europe/Amsterdam
-          # FIX: added output_action so SVG goes to gist instead of being committed to repo
           output_action: gist
           # NOTE: this step may still fail with 'Insufficient client scope' — to fix,
           # re-authorize your Spotify app with the 'user-read-recently-played' scope
@@ -113,17 +109,15 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_timezone: Europe/Amsterdam
-          # FIX: added missing output_action so SVG goes to gist instead of being committed to repo
           output_action: gist
-          config_order: stars, activity
+          # FIX: removed 'star' from filter and dropped plugin_stars to hide star activity
+          config_order: activity
           plugin_activity: yes
           plugin_activity_days: 14
-          plugin_activity_filter: all
+          plugin_activity_filter: comment, ref/create, ref/delete, release, push, issue, pr, review, wiki, fork, member, public
           plugin_activity_limit: 5
           plugin_activity_load: 300
           plugin_activity_visibility: all
-          plugin_stars: yes
-          plugin_stars_limit: 3
 
       - name: ⏱️ Google PageSpeed
         if: ${{ success() || failure() }}
@@ -133,7 +127,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_timezone: Europe/Amsterdam
-          # FIX: added missing output_action so SVG goes to gist instead of being committed to repo
           output_action: gist
           plugin_pagespeed: yes
           plugin_pagespeed_screenshot: yes
