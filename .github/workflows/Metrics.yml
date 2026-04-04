@@ -137,7 +137,7 @@ jobs:
 
       - name: ⚡ Recent activity
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.34
+        uses: martijnlindeman/metrics@master
         with:
           filename: "⚡ recent-activity.svg"
           token: ${{ secrets.METRICS_TOKEN }}
