@@ -114,26 +114,26 @@ jobs:
     #      plugin_achievements: yes
     #      plugin_achievements_display: compact
 
-      - name: 💡 Coding habits
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: "💡 coding-habits.svg"
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          config_timezone: Europe/Amsterdam
-          output_action: gist
-          plugins_errors_fatal: yes
-          debug: yes
-          verify: yes
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          # charts require web instance config — disabled for GitHub Action compatibility
-          plugin_habits_facts: yes
-          plugin_habits_charts: no
-          plugin_habits_languages_limit: 8
-          plugin_habits_languages_threshold: 0%
+     # - name: 💡 Coding habits
+     #   if: ${{ success() || failure() }}
+     #   uses: lowlighter/metrics@v3.34
+     #   with:
+     #     filename: "💡 coding-habits.svg"
+     #     token: ${{ secrets.METRICS_TOKEN }}
+     #     base: ""
+     #     config_timezone: Europe/Amsterdam
+     #     output_action: gist
+     #     plugins_errors_fatal: yes
+     #     debug: yes
+     #     verify: yes
+     #     plugin_habits: yes
+     #     plugin_habits_from: 200
+     #     plugin_habits_days: 14
+     #     # charts require web instance config — disabled for GitHub Action compatibility
+     #     plugin_habits_facts: yes
+     #     plugin_habits_charts: no
+     #     plugin_habits_languages_limit: 8
+     #     plugin_habits_languages_threshold: 0%
 
       - name: ⚡ Recent activity
         if: ${{ success() || failure() }}
