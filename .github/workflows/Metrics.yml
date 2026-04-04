@@ -1,3 +1,4 @@
+
 name: Metrics
 on:
   # 🌏 Think about the planet! No need to update stats too frequently
@@ -94,22 +95,22 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_display: compact
          
-  #   - name: ⚡ Recent activity
-  #     if: ${{ success() || failure() }}
-  #     uses: martijnlindeman/metrics@master
-  #     with:
-  #       filename: "⚡ recent-activity.svg"
-  #       token: ${{ secrets.METRICS_TOKEN }}
-  #       base: ""
-  #       config_order: stars, activity
-  #       plugin_activity: yes
-  #       plugin_activity_days: 14
-  #       plugin_activity_filter: all
-  #       plugin_activity_limit: 5
-  #       plugin_activity_load: 300
-  #       plugin_activity_visibility: all
-  #       plugin_stars: yes
-  #       plugin_stars_limit: 3
+      - name: ⚡ Recent activity
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@master
+        with:
+          filename: "⚡ recent-activity.svg"
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          config_order: stars, activity
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
+          plugin_stars: yes
+          plugin_stars_limit: 3
   #       plugin_music: yes
   #       plugin_music_provider: spotify
   #       plugin_music_mode: top
@@ -118,14 +119,14 @@ jobs:
   #       plugin_music_top_type: tracks
   #       plugin_music_limit: 5
 
-  #   - name: ⏱️ Google PageSpeed
-  #     if: ${{ success() || failure() }}
-  #     uses: martijnlindeman/metrics@master
-  #     with:
-  #       filename: "⏱️ Google PageSpeed.svg"
-  #       token: NOT_NEEDED
-  #       base: ""
-  #       plugin_pagespeed: yes
-  #       plugin_pagespeed_screenshot: yes
-  #       plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-  #       plugin_pagespeed_url: https://www.martijn-lindeman.com/
+      - name: ⏱️ Google PageSpeed
+        if: ${{ success() || failure() }}
+        uses: martijnlindeman/metrics@master
+        with:
+          filename: "⏱️ Google PageSpeed.svg"
+          token: NOT_NEEDED
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_screenshot: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://www.martijn-lindeman.com/
