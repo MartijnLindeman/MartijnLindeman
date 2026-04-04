@@ -98,21 +98,21 @@ jobs:
           plugin_music_top_type: artists
           plugin_music_limit: 5
 
-      - name: 🏆 Achievements
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: "🏆 achievements.svg"
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          config_timezone: Europe/Amsterdam
-          output_action: gist
-          plugins_errors_fatal: yes
-          debug: yes
-          verify: yes
-          config_order: achievements
-          plugin_achievements: yes
-          plugin_achievements_display: compact
+    #  - name: 🏆 Achievements
+    #    if: ${{ success() || failure() }}
+    #    uses: lowlighter/metrics@v3.34
+    #    with:
+    #      filename: "🏆 achievements.svg"
+    #      token: ${{ secrets.METRICS_TOKEN }}
+    #      base: ""
+    #      config_timezone: Europe/Amsterdam
+    #      output_action: gist
+    #      plugins_errors_fatal: yes
+    #      debug: yes
+    #      verify: yes
+    #      config_order: achievements
+    #      plugin_achievements: yes
+    #      plugin_achievements_display: compact
 
       - name: 💡 Coding habits
         if: ${{ success() || failure() }}
