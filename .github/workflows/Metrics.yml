@@ -21,7 +21,7 @@ jobs:
           filename: "📊 github-metrics.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, community, repositories, metadata
           config_timezone: Europe/Amsterdam
           base_indepth: yes
           output_action: gist
@@ -101,23 +101,24 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_display: compact
 
-      - name: ⚡ Recent activity
+      - name: 💡 Coding habits
         if: ${{ success() || failure() }}
         uses: martijnlindeman/metrics@master
         with:
-          filename: "⚡ recent-activity.svg"
+          filename: "💡 coding-habits.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_timezone: Europe/Amsterdam
           output_action: gist
-          # FIX: removed 'star' from filter and dropped plugin_stars to hide star activity
-          config_order: activity
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_filter: comment, ref/create, ref/delete, release, push, issue, pr, review, wiki, fork, member, public
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_visibility: all
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: graph
+          plugin_habits_trim: yes
+          plugin_habits_languages_limit: 8
+          plugin_habits_languages_threshold: 0%
 
       - name: ⏱️ Google PageSpeed
         if: ${{ success() || failure() }}
