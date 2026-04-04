@@ -137,16 +137,13 @@ jobs:
 
       - name: ⚡ Recent activity
         if: ${{ success() || failure() }}
-        uses: martijnlindeman/metrics@master
+        uses: lowlighter/metrics@v3.34
         with:
           filename: "⚡ recent-activity.svg"
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_timezone: Europe/Amsterdam
           output_action: gist
-          plugins_errors_fatal: yes
-          debug: yes
-          verify: yes
           config_order: activity
           plugin_activity: yes
           plugin_activity_limit: 5
@@ -155,23 +152,23 @@ jobs:
           plugin_activity_visibility: all
           plugin_activity_timestamps: yes
           # star excluded from filter intentionally
-          plugin_activity_filter: comment, ref/create, ref/delete, release, issue, pr, review, wiki, fork, member, public
+     #    plugin_activity_filter: comment, ref/create, ref/delete, release, issue, pr, review, wiki, fork, member, public
           # ignore common bots to keep the feed clean
-          plugin_activity_ignored: github-actions[bot], dependabot[bot], renovate[bot]
+     #    plugin_activity_ignored: github-actions[bot], dependabot[bot], renovate[bot]
 
-      - name: ⏱️ Google PageSpeed
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: "⏱️ Google PageSpeed.svg"
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          config_timezone: Europe/Amsterdam
-          output_action: gist
-          plugins_errors_fatal: yes
-          debug: yes
-          verify: yes
-          plugin_pagespeed: yes
-          plugin_pagespeed_screenshot: yes
+     #  - name: ⏱️ Google PageSpeed
+     #   if: ${{ success() || failure() }}
+     #   uses: lowlighter/metrics@v3.34
+     #   with:
+     #     filename: "⏱️ Google PageSpeed.svg"
+     #     token: ${{ secrets.METRICS_TOKEN }}
+     #     base: ""
+     #     config_timezone: Europe/Amsterdam
+     #     output_action: gist
+     #     plugins_errors_fatal: yes
+     #     debug: yes
+     #     verify: yes
+     #     plugin_pagespeed: yes
+     #     plugin_pagespeed_screenshot: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: https://www.martijn-lindeman.com/
