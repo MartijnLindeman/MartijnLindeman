@@ -39,55 +39,41 @@
 ## 🔧 Skills and Tools
 
 <p align="center">
-<a href="https://reactjs.org/">
-<span><img title="React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="30px"></span></a>
-</a>
-<a href="https://nodejs.org/">
-<span><img title="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" width="30px"></span></a>
-</a>
-<a href="https://developer.mozilla.org/">
-<span><img title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="30px"></span></a>
-</a>
-<a href="https://developer.mozilla.org/">
-<span><img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" width="30px"></span></a>
-</a>
-<a href="https://developer.mozilla.org/">
-<span><img title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" width="30px"></span></a>
-</a>
-<a href="https://www.php.net/">
-<span><img title="PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="30px"></span></a>
-</a>
-<a href="https://www.python.org/">
-<span><img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30px"></span></a>
-</a>
-<a href="https://www.ruby-lang.org/">
-<span><img title="Ruby" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" width="30px"></span></a>
-</a>
-<a href="https://www.linux.org/">
-<span><img title="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="30px"></span></a>
-</a>
-<a href="https://git-scm.com/">
-<span><img title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="30px"></span></a>
-</a>
-<a href="https://firebase.google.com/">
-<span><img title="Google Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="30px"></span></a>
-</a>
+
 <a href="https://vercel.com/">
-<span><img title="Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="30px"></span></a>
-</a>
+<img title="Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="30px"></a>
+
+<a href="https://nodejs.org/">
+<img title="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" width="30px"></a>
+
+<a href="https://developer.mozilla.org/">
+<img title="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="30px"></a>
+
+<a href="https://developer.mozilla.org/">
+<img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" width="30px"></a>
+
+<a href="https://developer.mozilla.org/">
+<img title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" width="30px"></a>
+
+<a href="https://www.python.org/">
+<img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30px"></a>
+
+<a href="https://www.linux.org/">
+<img title="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="30px"></a>
+
+<a href="https://git-scm.com/">
+<img title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="30px"></a>
+
+<a href="https://firebase.google.com/">
+<img title="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="30px"></a>
+
 <a href="https://azure.microsoft.com/">
-<span><img title="Azure" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="30px"></span></a>
-</a>
+<img title="Azure" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="30px"></a>
+
 <a href="https://aws.amazon.com/">
-<span><img title="AWS" src="assets/aws.png" width="30px"></span></a>
-</a>
+<img title="AWS" src="assets/aws.png" width="30px"></a>
+
 <a href="https://www.nginx.com/">
-<span><img title="Nginx" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="30px"></span></a>
-</a>
-<a href="https://www.adobe.com/ie/products/photoshop.html">
-<span><img title="Photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" width="30px"></span></a>
-</a>
-<a href="https://inkscape.org/">
-<span><img title="Inkscape" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-original.svg" width="30px"></span></a>
-</a>
+<img title="Nginx" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="30px"></a>
+
 </p>
