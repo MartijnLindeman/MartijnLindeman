@@ -40,33 +40,37 @@ jobs:
           plugin_topics_mode: icons
 
       - name: 📊 Github-metrics recent
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: "📊 github-metrics-recent.svg"
-          token: ${{ secrets.METRICS_TOKEN }}
-          template: classic
-          base: ""
-          config_timezone: Europe/Amsterdam
-          output_action: gist
-          plugins_errors_fatal: yes
-          debug: yes
-          verify: yes
+  if: ${{ success() || failure() }}
+  uses: lowlighter/metrics@v3.34
+  env:
+    GIT_ASKPASS: /bin/echo
+    GIT_TERMINAL_PROMPT: 0
+  with:
+    filename: "📊 github-metrics-recent.svg"
+    token: ${{ secrets.METRICS_TOKEN }}
+    committer_token: ${{ secrets.METRICS_TOKEN }}
+    template: classic
+    base: ""
+    config_timezone: Europe/Amsterdam
+    output_action: gist
+    plugins_errors_fatal: yes
+    debug: yes
+    verify: yes
 
-          plugin_languages: yes
-          plugin_languages_indepth: yes
-          commits_authoring: Martijn Lindeman, MartijnLindeman, MartijnLindeman@users.noreply.github.com
-          plugin_languages_sections: recently-used
-          plugin_languages_recent_days: 90
-          plugin_languages_recent_load: 500
-          plugin_languages_ignored: >-
-            html, css, tex, less, makefile, qmake, lex, cmake, gnuplot
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_limit: 4
-          plugin_languages_threshold: 2%
-          plugin_languages_colors: >-
-            javascript:#f1e05a, typescript:#3178c6, scss:#c6538c, shell:#89e051, python:#3572A5, dockerfile:#384d54
-
+    plugin_languages: yes
+    plugin_languages_indepth: yes
+    commits_authoring: Martijn Lindeman, MartijnLindeman, MartijnLindeman@users.noreply.github.com
+    plugin_languages_sections: recently-used
+    plugin_languages_recent_days: 90
+    plugin_languages_recent_load: 500
+    plugin_languages_ignored: >-
+      html, css, tex, less, makefile, qmake, lex, cmake, gnuplot
+    plugin_languages_details: bytes-size, percentage
+    plugin_languages_limit: 4
+    plugin_languages_threshold: 2%
+    plugin_languages_colors: >-
+      javascript:#f1e05a, typescript:#3178c6, scss:#c6538c, shell:#89e051, python:#3572a5, dockerfile:#384d54
+      
       - name: 🎵 Spotify - Top tracks
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@v3.34
