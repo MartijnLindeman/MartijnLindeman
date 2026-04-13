@@ -135,22 +135,22 @@ jobs:
      #     plugin_habits_languages_limit: 8
      #     plugin_habits_languages_threshold: 0%
 
-     # - name: ⚡ Recent activity
-     #   if: ${{ success() || failure() }}
-     #   uses: lowlighter/metrics@v3.34
-     #   with:
-     #     filename: "⚡ recent-activity.svg"
-     #     token: ${{ secrets.METRICS_TOKEN }}
-     #     base: ""
-     #     config_timezone: Europe/Amsterdam
-     #     output_action: gist
-     #     config_order: activity
-     #     plugin_activity: yes
-     #     plugin_activity_limit: 5
-     #     plugin_activity_load: 300
-     #     plugin_activity_days: 14
-     #     plugin_activity_visibility: all
-     #     plugin_activity_timestamps: yes
+      - name: ⚡ Recent activity
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@v3.34
+        with:
+          filename: "⚡ recent-activity.svg"
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          config_timezone: Europe/Amsterdam
+          output_action: gist
+          config_order: activity
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_days: 14
+          plugin_activity_visibility: all
+          plugin_activity_timestamps: yes
           # star excluded from filter intentionally
      #    plugin_activity_filter: comment, ref/create, ref/delete, release, issue, pr, review, wiki, fork, member, public
           # ignore common bots to keep the feed clean
@@ -170,6 +170,5 @@ jobs:
      #     verify: yes
      #     plugin_pagespeed: yes
      #     plugin_pagespeed_screenshot: yes
-     #     plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-     #     plugin_pagespeed_url: https://www.martijn-lindeman.com/
-
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://www.martijn-lindeman.com/
