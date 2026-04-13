@@ -29,7 +29,7 @@ jobs:
           verify: yes
           plugin_languages: yes
           plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 4
           plugin_topics: yes
@@ -170,5 +170,6 @@ jobs:
      #     verify: yes
      #     plugin_pagespeed: yes
      #     plugin_pagespeed_screenshot: yes
-     #    plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-     #    plugin_pagespeed_url: https://www.martijn-lindeman.com/
+     #     plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+     #     plugin_pagespeed_url: https://www.martijn-lindeman.com/
+
