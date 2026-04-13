@@ -1,20 +1,18 @@
 name: Metrics
-
 on:
-  schedule:
-    - cron: "0 16 * * *"
+  # 🌏 Think about the planet! No need to update stats too frequently
+  #  Plugins: https://github.com/lowlighter/metrics/tree/master/source/plugins
+  schedule: [{cron: "0 16 * * *"}]
+  # (optional) Run workflow manually
   workflow_dispatch:
-  push:
-    branches:
-      - master
-      - main
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: 📊 Github-metrics
         if: ${{ success() || failure() }}
@@ -30,21 +28,11 @@ jobs:
           plugins_errors_fatal: yes
           debug: yes
           verify: yes
-
           plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_sections: most-used
-          plugin_languages_details: lines, bytes-size, percentage
-          plugin_languages_limit: 6
-          plugin_languages_threshold: 0%
-          plugin_languages_other: yes
           plugin_languages_ignored: >-
-            tex, less, qmake, lex, gnuplot
-          plugin_languages_colors: >-
-            javascript:#f1e05a, typescript:#3178c6, scss:#c6538c
-          commits_authoring: >-
-            Martijn Lindeman, MartijnLindeman, MartijnLindeman@users.noreply.github.com
-
+             html, css, tex, less, makefile, qmake, lex, cmake gnuplot
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 4
           plugin_topics: yes
           plugin_topics_limit: 0
           plugin_topics_mode: icons
@@ -70,6 +58,26 @@ jobs:
           plugin_music_top_type: tracks
           plugin_music_limit: 5
 
+    #  - name: 🎵 Spotify - Recently listened
+    #    if: ${{ success() || failure() }}
+    #    uses: lowlighter/metrics@v3.34
+    #    with:
+    #      filename: "🎵 Spotify - Recently listened.svg"
+    #      token: ${{ secrets.METRICS_TOKEN }}
+    #      base: ""
+    #      config_timezone: Europe/Amsterdam
+    #      output_action: gist
+    #      plugins_errors_fatal: yes
+    #      debug: yes
+    #      verify: yes
+    #      # NOTE: may still fail with 'Insufficient client scope' — re-authorize your Spotify
+    #      # app with the 'user-read-recently-played' scope and regenerate your REFRESH_TOKEN
+    #      plugin_music: yes
+    #     plugin_music_provider: spotify
+    #      plugin_music_mode: recent
+    #      plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
+    #      plugin_music_played_at: yes
+
       - name: 🎵 Spotify - Top artists
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@v3.34
@@ -91,46 +99,6 @@ jobs:
           plugin_music_top_type: artists
           plugin_music_limit: 5
 
-      - name: ⚡ Recent activity
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: "⚡ recent-activity.svg"
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          config_timezone: Europe/Amsterdam
-          output_action: gist
-          config_order: activity
-          plugins_errors_fatal: yes
-          debug: yes
-          verify: yes
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_days: 14
-          plugin_activity_visibility: all
-          plugin_activity_timestamps: yes
-          plugin_activity_filter: comment, ref/create, ref/delete, release, issue, pr, review, wiki, fork, member, public
-          plugin_activity_ignored: github-actions[bot], dependabot[bot], renovate[bot]
-
-    #  - name: 🎵 Spotify - Recently listened
-    #    if: ${{ success() || failure() }}
-    #    uses: lowlighter/metrics@v3.34
-    #    with:
-    #      filename: "🎵 Spotify - Recently listened.svg"
-    #      token: ${{ secrets.METRICS_TOKEN }}
-    #      base: ""
-    #      config_timezone: Europe/Amsterdam
-    #      output_action: gist
-    #      plugins_errors_fatal: yes
-    #      debug: yes
-    #      verify: yes
-    #      plugin_music: yes
-    #      plugin_music_provider: spotify
-    #      plugin_music_mode: recent
-    #      plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
-    #      plugin_music_played_at: yes
-
     #  - name: 🏆 Achievements
     #    if: ${{ success() || failure() }}
     #    uses: lowlighter/metrics@v3.34
@@ -147,39 +115,61 @@ jobs:
     #      plugin_achievements: yes
     #      plugin_achievements_display: compact
 
-    #  - name: 💡 Coding habits
-    #    if: ${{ success() || failure() }}
-    #    uses: lowlighter/metrics@v3.34
-    #    with:
-    #      filename: "💡 coding-habits.svg"
-    #      token: ${{ secrets.METRICS_TOKEN }}
-    #      base: ""
-    #      config_timezone: Europe/Amsterdam
-    #      output_action: gist
-    #      plugins_errors_fatal: yes
-    #      debug: yes
-    #      verify: yes
-    #      plugin_habits: yes
-    #      plugin_habits_from: 200
-    #      plugin_habits_days: 14
-    #      plugin_habits_facts: yes
-    #      plugin_habits_charts: no
-    #      plugin_habits_languages_limit: 8
-    #      plugin_habits_languages_threshold: 0%
+     # - name: 💡 Coding habits
+     #   if: ${{ success() || failure() }}
+     #   uses: lowlighter/metrics@v3.34
+     #   with:
+     #     filename: "💡 coding-habits.svg"
+     #     token: ${{ secrets.METRICS_TOKEN }}
+     #     base: ""
+     #     config_timezone: Europe/Amsterdam
+     #     output_action: gist
+     #     plugins_errors_fatal: yes
+     #     debug: yes
+     #     verify: yes
+     #     plugin_habits: yes
+     #     plugin_habits_from: 200
+     #     plugin_habits_days: 14
+     #     # charts require web instance config — disabled for GitHub Action compatibility
+     #     plugin_habits_facts: yes
+     #     plugin_habits_charts: no
+     #     plugin_habits_languages_limit: 8
+     #     plugin_habits_languages_threshold: 0%
 
-    #  - name: ⏱️ Google PageSpeed
-    #    if: ${{ success() || failure() }}
-    #    uses: lowlighter/metrics@v3.34
-    #    with:
-    #      filename: "⏱️ Google PageSpeed.svg"
-    #      token: ${{ secrets.METRICS_TOKEN }}
-    #      base: ""
-    #      config_timezone: Europe/Amsterdam
-    #      output_action: gist
-    #      plugins_errors_fatal: yes
-    #      debug: yes
-    #      verify: yes
-    #      plugin_pagespeed: yes
-    #      plugin_pagespeed_screenshot: yes
-    #      plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-    #      plugin_pagespeed_url: https://www.martijn-lindeman.com/
+     #- name: ⚡ Recent activity
+     #  if: ${{ success() || failure() }}
+     #  uses: lowlighter/metrics@v3.34
+     #  with:
+     #    filename: "⚡ recent-activity.svg"
+     #    token: ${{ secrets.METRICS_TOKEN }}
+     #    base: ""
+     #    config_timezone: Europe/Amsterdam
+     #    output_action: gist
+     #    config_order: activity
+     #    plugin_activity: yes
+     #    plugin_activity_limit: 5
+     #    plugin_activity_load: 300
+     #    plugin_activity_days: 14
+     #    plugin_activity_visibility: all
+     #    plugin_activity_timestamps: yes
+     #    star excluded from filter intentionally
+     #    plugin_activity_filter: comment, ref/create, ref/delete, release, issue, pr, review, wiki, fork, member, public
+     #    ignore common bots to keep the feed clean
+     #    plugin_activity_ignored: github-actions[bot], dependabot[bot], renovate[bot]
+
+     #  - name: ⏱️ Google PageSpeed
+     #   if: ${{ success() || failure() }}
+     #   uses: lowlighter/metrics@v3.34
+     #   with:
+     #     filename: "⏱️ Google PageSpeed.svg"
+     #     token: ${{ secrets.METRICS_TOKEN }}
+     #     base: ""
+     #     config_timezone: Europe/Amsterdam
+     #     output_action: gist
+     #     plugins_errors_fatal: yes
+     #     debug: yes
+     #     verify: yes
+     #     plugin_pagespeed: yes
+     #     plugin_pagespeed_screenshot: yes
+     #     plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+     #     plugin_pagespeed_url: https://www.martijn-lindeman.com/
