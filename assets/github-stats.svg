@@ -1,0 +1,868 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="695" viewBox="0 0 760 695" role="img" aria-labelledby="title description">
+  <title id="title">Martijn Lindeman GitHub statistics</title>
+  <desc id="description">GitHub profile summary with statistics, yearly contributions, languages, public repositories, and topics for MartijnLindeman</desc>
+  <style>
+    :root {
+      --background: #0d1117;
+      --surface: #161b22;
+      --surface-2: #1d2330;
+      --border: #353353;
+      --divider: #30363d;
+      --primary: #7c72ff;
+      --text: #f0f3f6;
+      --muted: #8b949e;
+      --tile: #151923;
+      --heat-0: #21262d;
+      --heat-1: #353353;
+      --heat-2: #454269;
+      --heat-3: #4f46e5;
+      --heat-4: #7c72ff;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --background: #ffffff;
+        --surface: #f6f8fa;
+        --surface-2: #eef1f5;
+        --border: #d8d3ff;
+        --divider: #d8dee4;
+        --primary: #4f46e5;
+        --text: #24292f;
+        --muted: #57606a;
+        --tile: #f6f8fa;
+        --heat-0: #ebedf0;
+        --heat-1: #d8d3ff;
+        --heat-2: #aaa3ff;
+        --heat-3: #746aff;
+        --heat-4: #4f46e5;
+      }
+    }
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: var(--text); }
+    .card { fill: var(--background); stroke: var(--border); stroke-width: 2; }
+    .tile { fill: var(--tile); stroke: var(--divider); }
+    .repo { fill: var(--surface); stroke: var(--divider); }
+    .footer-strip { fill: var(--surface); }
+    .avatar-fallback, .pill { fill: var(--border); }
+    .avatar-letter { font-size: 27px; font-weight: 700; fill: #ffffff; }
+    .name { font-size: 24px; font-weight: 700; fill: var(--primary); }
+    .handle { font-size: 13px; fill: var(--muted); }
+    .label, .small { font-size: 12px; fill: var(--muted); }
+    .value { font-size: 17px; font-weight: 700; fill: var(--text); }
+    .section { font-size: 15px; font-weight: 650; fill: var(--primary); }
+    .repo-name { font-size: 12px; font-weight: 600; fill: var(--text); }
+    .micro { font-size: 10px; fill: var(--muted); }
+    .muted { font-size: 12px; fill: var(--muted); }
+    .topic { font-size: 10px; fill: #ffffff; }
+    .footer { font-size: 10px; fill: var(--muted); }
+    .level-0 { fill: var(--heat-0); }
+    .level-1 { fill: var(--heat-1); }
+    .level-2 { fill: var(--heat-2); }
+    .level-3 { fill: var(--heat-3); }
+    .level-4 { fill: var(--heat-4); }
+    .heat-cell { stroke: var(--divider); stroke-width: 0.55; }
+  </style>
+  <rect x="1" y="1" width="758" height="693" rx="16" class="card"/>
+  <defs>
+      <clipPath id="avatar-clip"><circle cx="63" cy="58" r="34"/></clipPath>
+    </defs>
+    <image href="data:image/jpeg;base64,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" x="29" y="24" width="68" height="68" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice"/>
+  <text x="113" y="47" class="name">Martijn Lindeman</text>
+  <text x="113" y="70" class="handle">GitHub member for 5 years</text>
+  <text x="732" y="47" text-anchor="end" class="small">0 public repositories</text>
+  <line x1="28" y1="104" x2="732" y2="104" stroke="var(--divider)"/>
+  
+      <g transform="translate(28 124)">
+        <rect width="224" height="50" rx="9" class="tile"/>
+        <text x="14" y="20" class="label">Followers</text>
+        <text x="14" y="41" class="value">21</text>
+      </g>
+      <g transform="translate(268 124)">
+        <rect width="224" height="50" rx="9" class="tile"/>
+        <text x="14" y="20" class="label">Repositories</text>
+        <text x="14" y="41" class="value">76</text>
+      </g>
+      <g transform="translate(508 124)">
+        <rect width="224" height="50" rx="9" class="tile"/>
+        <text x="14" y="20" class="label">Total stars</text>
+        <text x="14" y="41" class="value">0</text>
+      </g>
+      <g transform="translate(28 186)">
+        <rect width="224" height="50" rx="9" class="tile"/>
+        <text x="14" y="20" class="label">Total forks</text>
+        <text x="14" y="41" class="value">0</text>
+      </g>
+      <g transform="translate(268 186)">
+        <rect width="224" height="50" rx="9" class="tile"/>
+        <text x="14" y="20" class="label">Contributions</text>
+        <text x="14" y="41" class="value">71</text>
+      </g>
+      <g transform="translate(508 186)">
+        <rect width="224" height="50" rx="9" class="tile"/>
+        <text x="14" y="20" class="label">Contributed to</text>
+        <text x="14" y="41" class="value">0 repos</text>
+      </g>
+  <text x="28" y="265" class="section">Contribution activity</text>
+  <text x="732" y="265" text-anchor="end" class="small">71 in the last year · 71 private</text>
+  <text x="64.00" y="285" class="micro">Aug</text><text x="127.60" y="285" class="micro">Sep</text><text x="178.48" y="285" class="micro">Oct</text><text x="229.36" y="285" class="micro">Nov</text><text x="292.96" y="285" class="micro">Dec</text><text x="343.84" y="285" class="micro">Jan</text><text x="394.72" y="285" class="micro">Feb</text><text x="445.60" y="285" class="micro">Mar</text><text x="509.20" y="285" class="micro">Apr</text><text x="560.08" y="285" class="micro">May</text><text x="623.68" y="285" class="micro">Jun</text><text x="674.56" y="285" class="micro">Jul</text>
+  <text x="52" y="310" text-anchor="end" class="micro">Mon</text>
+    <text x="52" y="334" text-anchor="end" class="micro">Wed</text>
+    <text x="52" y="358" text-anchor="end" class="micro">Fri</text>
+  <rect x="64.00" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-03: 0 contributions</title>
+          </rect><rect x="64.00" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-04: 0 contributions</title>
+          </rect><rect x="64.00" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-05: 0 contributions</title>
+          </rect><rect x="64.00" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-06: 0 contributions</title>
+          </rect><rect x="64.00" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-07: 0 contributions</title>
+          </rect><rect x="64.00" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-08: 0 contributions</title>
+          </rect><rect x="64.00" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-09: 0 contributions</title>
+          </rect><rect x="76.72" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-10: 0 contributions</title>
+          </rect><rect x="76.72" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-11: 0 contributions</title>
+          </rect><rect x="76.72" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-12: 0 contributions</title>
+          </rect><rect x="76.72" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-13: 0 contributions</title>
+          </rect><rect x="76.72" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-14: 0 contributions</title>
+          </rect><rect x="76.72" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-15: 0 contributions</title>
+          </rect><rect x="76.72" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-16: 0 contributions</title>
+          </rect><rect x="89.44" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-17: 0 contributions</title>
+          </rect><rect x="89.44" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-18: 0 contributions</title>
+          </rect><rect x="89.44" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-19: 0 contributions</title>
+          </rect><rect x="89.44" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-20: 0 contributions</title>
+          </rect><rect x="89.44" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-21: 0 contributions</title>
+          </rect><rect x="89.44" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-22: 0 contributions</title>
+          </rect><rect x="89.44" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-23: 0 contributions</title>
+          </rect><rect x="102.16" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-24: 0 contributions</title>
+          </rect><rect x="102.16" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-25: 0 contributions</title>
+          </rect><rect x="102.16" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-26: 0 contributions</title>
+          </rect><rect x="102.16" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-27: 0 contributions</title>
+          </rect><rect x="102.16" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-28: 0 contributions</title>
+          </rect><rect x="102.16" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-29: 0 contributions</title>
+          </rect><rect x="102.16" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-30: 0 contributions</title>
+          </rect><rect x="114.88" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-08-31: 0 contributions</title>
+          </rect><rect x="114.88" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-01: 0 contributions</title>
+          </rect><rect x="114.88" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-02: 0 contributions</title>
+          </rect><rect x="114.88" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-03: 0 contributions</title>
+          </rect><rect x="114.88" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-04: 0 contributions</title>
+          </rect><rect x="114.88" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-05: 0 contributions</title>
+          </rect><rect x="114.88" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-06: 0 contributions</title>
+          </rect><rect x="127.60" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-07: 0 contributions</title>
+          </rect><rect x="127.60" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-08: 0 contributions</title>
+          </rect><rect x="127.60" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-09: 0 contributions</title>
+          </rect><rect x="127.60" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-10: 0 contributions</title>
+          </rect><rect x="127.60" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-11: 0 contributions</title>
+          </rect><rect x="127.60" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-12: 0 contributions</title>
+          </rect><rect x="127.60" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-13: 0 contributions</title>
+          </rect><rect x="140.32" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-14: 0 contributions</title>
+          </rect><rect x="140.32" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-15: 0 contributions</title>
+          </rect><rect x="140.32" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-16: 0 contributions</title>
+          </rect><rect x="140.32" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-17: 0 contributions</title>
+          </rect><rect x="140.32" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-18: 0 contributions</title>
+          </rect><rect x="140.32" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-19: 0 contributions</title>
+          </rect><rect x="140.32" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-20: 0 contributions</title>
+          </rect><rect x="153.04" y="297" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2025-09-21: 1 contributions</title>
+          </rect><rect x="153.04" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-22: 0 contributions</title>
+          </rect><rect x="153.04" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-23: 0 contributions</title>
+          </rect><rect x="153.04" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-24: 0 contributions</title>
+          </rect><rect x="153.04" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-25: 0 contributions</title>
+          </rect><rect x="153.04" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-26: 0 contributions</title>
+          </rect><rect x="153.04" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-27: 0 contributions</title>
+          </rect><rect x="165.76" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-28: 0 contributions</title>
+          </rect><rect x="165.76" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-29: 0 contributions</title>
+          </rect><rect x="165.76" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-09-30: 0 contributions</title>
+          </rect><rect x="165.76" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-01: 0 contributions</title>
+          </rect><rect x="165.76" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-02: 0 contributions</title>
+          </rect><rect x="165.76" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-03: 0 contributions</title>
+          </rect><rect x="165.76" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-04: 0 contributions</title>
+          </rect><rect x="178.48" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-05: 0 contributions</title>
+          </rect><rect x="178.48" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-06: 0 contributions</title>
+          </rect><rect x="178.48" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-07: 0 contributions</title>
+          </rect><rect x="178.48" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-08: 0 contributions</title>
+          </rect><rect x="178.48" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-09: 0 contributions</title>
+          </rect><rect x="178.48" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-10: 0 contributions</title>
+          </rect><rect x="178.48" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-11: 0 contributions</title>
+          </rect><rect x="191.20" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-12: 0 contributions</title>
+          </rect><rect x="191.20" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-13: 0 contributions</title>
+          </rect><rect x="191.20" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-14: 0 contributions</title>
+          </rect><rect x="191.20" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-15: 0 contributions</title>
+          </rect><rect x="191.20" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-16: 0 contributions</title>
+          </rect><rect x="191.20" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-17: 0 contributions</title>
+          </rect><rect x="191.20" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-18: 0 contributions</title>
+          </rect><rect x="203.92" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-19: 0 contributions</title>
+          </rect><rect x="203.92" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-20: 0 contributions</title>
+          </rect><rect x="203.92" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-21: 0 contributions</title>
+          </rect><rect x="203.92" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-22: 0 contributions</title>
+          </rect><rect x="203.92" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-23: 0 contributions</title>
+          </rect><rect x="203.92" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-24: 0 contributions</title>
+          </rect><rect x="203.92" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-25: 0 contributions</title>
+          </rect><rect x="216.64" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-26: 0 contributions</title>
+          </rect><rect x="216.64" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-27: 0 contributions</title>
+          </rect><rect x="216.64" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-28: 0 contributions</title>
+          </rect><rect x="216.64" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-29: 0 contributions</title>
+          </rect><rect x="216.64" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-30: 0 contributions</title>
+          </rect><rect x="216.64" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-10-31: 0 contributions</title>
+          </rect><rect x="216.64" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-01: 0 contributions</title>
+          </rect><rect x="229.36" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-02: 0 contributions</title>
+          </rect><rect x="229.36" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-03: 0 contributions</title>
+          </rect><rect x="229.36" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-04: 0 contributions</title>
+          </rect><rect x="229.36" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-05: 0 contributions</title>
+          </rect><rect x="229.36" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-06: 0 contributions</title>
+          </rect><rect x="229.36" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-07: 0 contributions</title>
+          </rect><rect x="229.36" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-08: 0 contributions</title>
+          </rect><rect x="242.08" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-09: 0 contributions</title>
+          </rect><rect x="242.08" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-10: 0 contributions</title>
+          </rect><rect x="242.08" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-11: 0 contributions</title>
+          </rect><rect x="242.08" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-12: 0 contributions</title>
+          </rect><rect x="242.08" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-13: 0 contributions</title>
+          </rect><rect x="242.08" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-14: 0 contributions</title>
+          </rect><rect x="242.08" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-15: 0 contributions</title>
+          </rect><rect x="254.80" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-16: 0 contributions</title>
+          </rect><rect x="254.80" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-17: 0 contributions</title>
+          </rect><rect x="254.80" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-18: 0 contributions</title>
+          </rect><rect x="254.80" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-19: 0 contributions</title>
+          </rect><rect x="254.80" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-20: 0 contributions</title>
+          </rect><rect x="254.80" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-21: 0 contributions</title>
+          </rect><rect x="254.80" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-22: 0 contributions</title>
+          </rect><rect x="267.52" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-23: 0 contributions</title>
+          </rect><rect x="267.52" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-24: 0 contributions</title>
+          </rect><rect x="267.52" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-25: 0 contributions</title>
+          </rect><rect x="267.52" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-26: 0 contributions</title>
+          </rect><rect x="267.52" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-27: 0 contributions</title>
+          </rect><rect x="267.52" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-28: 0 contributions</title>
+          </rect><rect x="267.52" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-29: 0 contributions</title>
+          </rect><rect x="280.24" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-11-30: 0 contributions</title>
+          </rect><rect x="280.24" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-01: 0 contributions</title>
+          </rect><rect x="280.24" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-02: 0 contributions</title>
+          </rect><rect x="280.24" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-03: 0 contributions</title>
+          </rect><rect x="280.24" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-04: 0 contributions</title>
+          </rect><rect x="280.24" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-05: 0 contributions</title>
+          </rect><rect x="280.24" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-06: 0 contributions</title>
+          </rect><rect x="292.96" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-07: 0 contributions</title>
+          </rect><rect x="292.96" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-08: 0 contributions</title>
+          </rect><rect x="292.96" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-09: 0 contributions</title>
+          </rect><rect x="292.96" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-10: 0 contributions</title>
+          </rect><rect x="292.96" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-11: 0 contributions</title>
+          </rect><rect x="292.96" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-12: 0 contributions</title>
+          </rect><rect x="292.96" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-13: 0 contributions</title>
+          </rect><rect x="305.68" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-14: 0 contributions</title>
+          </rect><rect x="305.68" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-15: 0 contributions</title>
+          </rect><rect x="305.68" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-16: 0 contributions</title>
+          </rect><rect x="305.68" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-17: 0 contributions</title>
+          </rect><rect x="305.68" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-18: 0 contributions</title>
+          </rect><rect x="305.68" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-19: 0 contributions</title>
+          </rect><rect x="305.68" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-20: 0 contributions</title>
+          </rect><rect x="318.40" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-21: 0 contributions</title>
+          </rect><rect x="318.40" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-22: 0 contributions</title>
+          </rect><rect x="318.40" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-23: 0 contributions</title>
+          </rect><rect x="318.40" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-24: 0 contributions</title>
+          </rect><rect x="318.40" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-25: 0 contributions</title>
+          </rect><rect x="318.40" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-26: 0 contributions</title>
+          </rect><rect x="318.40" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-27: 0 contributions</title>
+          </rect><rect x="331.12" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-28: 0 contributions</title>
+          </rect><rect x="331.12" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-29: 0 contributions</title>
+          </rect><rect x="331.12" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-30: 0 contributions</title>
+          </rect><rect x="331.12" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2025-12-31: 0 contributions</title>
+          </rect><rect x="331.12" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-01: 0 contributions</title>
+          </rect><rect x="331.12" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-02: 0 contributions</title>
+          </rect><rect x="331.12" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-03: 0 contributions</title>
+          </rect><rect x="343.84" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-04: 0 contributions</title>
+          </rect><rect x="343.84" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-05: 0 contributions</title>
+          </rect><rect x="343.84" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-06: 0 contributions</title>
+          </rect><rect x="343.84" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-07: 0 contributions</title>
+          </rect><rect x="343.84" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-08: 0 contributions</title>
+          </rect><rect x="343.84" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-09: 0 contributions</title>
+          </rect><rect x="343.84" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-10: 0 contributions</title>
+          </rect><rect x="356.56" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-11: 0 contributions</title>
+          </rect><rect x="356.56" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-12: 0 contributions</title>
+          </rect><rect x="356.56" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-13: 0 contributions</title>
+          </rect><rect x="356.56" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-14: 0 contributions</title>
+          </rect><rect x="356.56" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-15: 0 contributions</title>
+          </rect><rect x="356.56" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-16: 0 contributions</title>
+          </rect><rect x="356.56" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-17: 0 contributions</title>
+          </rect><rect x="369.28" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-18: 0 contributions</title>
+          </rect><rect x="369.28" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-19: 0 contributions</title>
+          </rect><rect x="369.28" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-20: 0 contributions</title>
+          </rect><rect x="369.28" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-21: 0 contributions</title>
+          </rect><rect x="369.28" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-22: 0 contributions</title>
+          </rect><rect x="369.28" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-23: 0 contributions</title>
+          </rect><rect x="369.28" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-24: 0 contributions</title>
+          </rect><rect x="382.00" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-25: 0 contributions</title>
+          </rect><rect x="382.00" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-26: 0 contributions</title>
+          </rect><rect x="382.00" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-27: 0 contributions</title>
+          </rect><rect x="382.00" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-28: 0 contributions</title>
+          </rect><rect x="382.00" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-29: 0 contributions</title>
+          </rect><rect x="382.00" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-30: 0 contributions</title>
+          </rect><rect x="382.00" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-01-31: 0 contributions</title>
+          </rect><rect x="394.72" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-01: 0 contributions</title>
+          </rect><rect x="394.72" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-02: 0 contributions</title>
+          </rect><rect x="394.72" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-03: 0 contributions</title>
+          </rect><rect x="394.72" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-04: 0 contributions</title>
+          </rect><rect x="394.72" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-05: 0 contributions</title>
+          </rect><rect x="394.72" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-06: 0 contributions</title>
+          </rect><rect x="394.72" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-07: 0 contributions</title>
+          </rect><rect x="407.44" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-08: 0 contributions</title>
+          </rect><rect x="407.44" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-09: 0 contributions</title>
+          </rect><rect x="407.44" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-10: 0 contributions</title>
+          </rect><rect x="407.44" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-11: 0 contributions</title>
+          </rect><rect x="407.44" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-12: 0 contributions</title>
+          </rect><rect x="407.44" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-13: 0 contributions</title>
+          </rect><rect x="407.44" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-14: 0 contributions</title>
+          </rect><rect x="420.16" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-15: 0 contributions</title>
+          </rect><rect x="420.16" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-16: 0 contributions</title>
+          </rect><rect x="420.16" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-17: 0 contributions</title>
+          </rect><rect x="420.16" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-18: 0 contributions</title>
+          </rect><rect x="420.16" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-19: 0 contributions</title>
+          </rect><rect x="420.16" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-20: 0 contributions</title>
+          </rect><rect x="420.16" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-21: 0 contributions</title>
+          </rect><rect x="432.88" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-22: 0 contributions</title>
+          </rect><rect x="432.88" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-23: 0 contributions</title>
+          </rect><rect x="432.88" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-24: 0 contributions</title>
+          </rect><rect x="432.88" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-25: 0 contributions</title>
+          </rect><rect x="432.88" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-26: 0 contributions</title>
+          </rect><rect x="432.88" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-27: 0 contributions</title>
+          </rect><rect x="432.88" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-02-28: 0 contributions</title>
+          </rect><rect x="445.60" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-01: 0 contributions</title>
+          </rect><rect x="445.60" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-02: 0 contributions</title>
+          </rect><rect x="445.60" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-03: 0 contributions</title>
+          </rect><rect x="445.60" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-04: 0 contributions</title>
+          </rect><rect x="445.60" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-05: 0 contributions</title>
+          </rect><rect x="445.60" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-06: 0 contributions</title>
+          </rect><rect x="445.60" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-07: 0 contributions</title>
+          </rect><rect x="458.32" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-08: 0 contributions</title>
+          </rect><rect x="458.32" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-09: 0 contributions</title>
+          </rect><rect x="458.32" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-10: 0 contributions</title>
+          </rect><rect x="458.32" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-11: 0 contributions</title>
+          </rect><rect x="458.32" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-12: 0 contributions</title>
+          </rect><rect x="458.32" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-13: 0 contributions</title>
+          </rect><rect x="458.32" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-14: 0 contributions</title>
+          </rect><rect x="471.04" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-15: 0 contributions</title>
+          </rect><rect x="471.04" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-16: 0 contributions</title>
+          </rect><rect x="471.04" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-17: 0 contributions</title>
+          </rect><rect x="471.04" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-18: 0 contributions</title>
+          </rect><rect x="471.04" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-19: 0 contributions</title>
+          </rect><rect x="471.04" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-20: 0 contributions</title>
+          </rect><rect x="471.04" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-21: 0 contributions</title>
+          </rect><rect x="483.76" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-22: 0 contributions</title>
+          </rect><rect x="483.76" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-23: 0 contributions</title>
+          </rect><rect x="483.76" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-24: 0 contributions</title>
+          </rect><rect x="483.76" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-25: 0 contributions</title>
+          </rect><rect x="483.76" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-26: 0 contributions</title>
+          </rect><rect x="483.76" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-27: 0 contributions</title>
+          </rect><rect x="483.76" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-28: 0 contributions</title>
+          </rect><rect x="496.48" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-29: 0 contributions</title>
+          </rect><rect x="496.48" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-30: 0 contributions</title>
+          </rect><rect x="496.48" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-03-31: 0 contributions</title>
+          </rect><rect x="496.48" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-01: 0 contributions</title>
+          </rect><rect x="496.48" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-02: 0 contributions</title>
+          </rect><rect x="496.48" y="357" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2026-04-03: 2 contributions</title>
+          </rect><rect x="496.48" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-04: 0 contributions</title>
+          </rect><rect x="509.20" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-05: 0 contributions</title>
+          </rect><rect x="509.20" y="309" width="9" height="9" rx="2" class="heat-cell level-4">
+            <title>2026-04-06: 13 contributions</title>
+          </rect><rect x="509.20" y="321" width="9" height="9" rx="2" class="heat-cell level-2">
+            <title>2026-04-07: 6 contributions</title>
+          </rect><rect x="509.20" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-08: 0 contributions</title>
+          </rect><rect x="509.20" y="345" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2026-04-09: 3 contributions</title>
+          </rect><rect x="509.20" y="357" width="9" height="9" rx="2" class="heat-cell level-3">
+            <title>2026-04-10: 7 contributions</title>
+          </rect><rect x="509.20" y="369" width="9" height="9" rx="2" class="heat-cell level-2">
+            <title>2026-04-11: 5 contributions</title>
+          </rect><rect x="521.92" y="297" width="9" height="9" rx="2" class="heat-cell level-2">
+            <title>2026-04-12: 4 contributions</title>
+          </rect><rect x="521.92" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-13: 0 contributions</title>
+          </rect><rect x="521.92" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-14: 0 contributions</title>
+          </rect><rect x="521.92" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-15: 0 contributions</title>
+          </rect><rect x="521.92" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-16: 0 contributions</title>
+          </rect><rect x="521.92" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-17: 0 contributions</title>
+          </rect><rect x="521.92" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-18: 0 contributions</title>
+          </rect><rect x="534.64" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-19: 0 contributions</title>
+          </rect><rect x="534.64" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-20: 0 contributions</title>
+          </rect><rect x="534.64" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-21: 0 contributions</title>
+          </rect><rect x="534.64" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-22: 0 contributions</title>
+          </rect><rect x="534.64" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-23: 0 contributions</title>
+          </rect><rect x="534.64" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-24: 0 contributions</title>
+          </rect><rect x="534.64" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-25: 0 contributions</title>
+          </rect><rect x="547.36" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-26: 0 contributions</title>
+          </rect><rect x="547.36" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-27: 0 contributions</title>
+          </rect><rect x="547.36" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-28: 0 contributions</title>
+          </rect><rect x="547.36" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-29: 0 contributions</title>
+          </rect><rect x="547.36" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-04-30: 0 contributions</title>
+          </rect><rect x="547.36" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-01: 0 contributions</title>
+          </rect><rect x="547.36" y="369" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2026-05-02: 2 contributions</title>
+          </rect><rect x="560.08" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-03: 0 contributions</title>
+          </rect><rect x="560.08" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-04: 0 contributions</title>
+          </rect><rect x="560.08" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-05: 0 contributions</title>
+          </rect><rect x="560.08" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-06: 0 contributions</title>
+          </rect><rect x="560.08" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-07: 0 contributions</title>
+          </rect><rect x="560.08" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-08: 0 contributions</title>
+          </rect><rect x="560.08" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-09: 0 contributions</title>
+          </rect><rect x="572.80" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-10: 0 contributions</title>
+          </rect><rect x="572.80" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-11: 0 contributions</title>
+          </rect><rect x="572.80" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-12: 0 contributions</title>
+          </rect><rect x="572.80" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-13: 0 contributions</title>
+          </rect><rect x="572.80" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-14: 0 contributions</title>
+          </rect><rect x="572.80" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-15: 0 contributions</title>
+          </rect><rect x="572.80" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-16: 0 contributions</title>
+          </rect><rect x="585.52" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-17: 0 contributions</title>
+          </rect><rect x="585.52" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-18: 0 contributions</title>
+          </rect><rect x="585.52" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-19: 0 contributions</title>
+          </rect><rect x="585.52" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-20: 0 contributions</title>
+          </rect><rect x="585.52" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-21: 0 contributions</title>
+          </rect><rect x="585.52" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-22: 0 contributions</title>
+          </rect><rect x="585.52" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-23: 0 contributions</title>
+          </rect><rect x="598.24" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-24: 0 contributions</title>
+          </rect><rect x="598.24" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-25: 0 contributions</title>
+          </rect><rect x="598.24" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-26: 0 contributions</title>
+          </rect><rect x="598.24" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-27: 0 contributions</title>
+          </rect><rect x="598.24" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-28: 0 contributions</title>
+          </rect><rect x="598.24" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-29: 0 contributions</title>
+          </rect><rect x="598.24" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-30: 0 contributions</title>
+          </rect><rect x="610.96" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-05-31: 0 contributions</title>
+          </rect><rect x="610.96" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-01: 0 contributions</title>
+          </rect><rect x="610.96" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-02: 0 contributions</title>
+          </rect><rect x="610.96" y="333" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2026-06-03: 1 contributions</title>
+          </rect><rect x="610.96" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-04: 0 contributions</title>
+          </rect><rect x="610.96" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-05: 0 contributions</title>
+          </rect><rect x="610.96" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-06: 0 contributions</title>
+          </rect><rect x="623.68" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-07: 0 contributions</title>
+          </rect><rect x="623.68" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-08: 0 contributions</title>
+          </rect><rect x="623.68" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-09: 0 contributions</title>
+          </rect><rect x="623.68" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-10: 0 contributions</title>
+          </rect><rect x="623.68" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-11: 0 contributions</title>
+          </rect><rect x="623.68" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-12: 0 contributions</title>
+          </rect><rect x="623.68" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-13: 0 contributions</title>
+          </rect><rect x="636.40" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-14: 0 contributions</title>
+          </rect><rect x="636.40" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-15: 0 contributions</title>
+          </rect><rect x="636.40" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-16: 0 contributions</title>
+          </rect><rect x="636.40" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-17: 0 contributions</title>
+          </rect><rect x="636.40" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-18: 0 contributions</title>
+          </rect><rect x="636.40" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-19: 0 contributions</title>
+          </rect><rect x="636.40" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-20: 0 contributions</title>
+          </rect><rect x="649.12" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-21: 0 contributions</title>
+          </rect><rect x="649.12" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-22: 0 contributions</title>
+          </rect><rect x="649.12" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-23: 0 contributions</title>
+          </rect><rect x="649.12" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-24: 0 contributions</title>
+          </rect><rect x="649.12" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-25: 0 contributions</title>
+          </rect><rect x="649.12" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-26: 0 contributions</title>
+          </rect><rect x="649.12" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-27: 0 contributions</title>
+          </rect><rect x="661.84" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-28: 0 contributions</title>
+          </rect><rect x="661.84" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-29: 0 contributions</title>
+          </rect><rect x="661.84" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-06-30: 0 contributions</title>
+          </rect><rect x="661.84" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-01: 0 contributions</title>
+          </rect><rect x="661.84" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-02: 0 contributions</title>
+          </rect><rect x="661.84" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-03: 0 contributions</title>
+          </rect><rect x="661.84" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-04: 0 contributions</title>
+          </rect><rect x="674.56" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-05: 0 contributions</title>
+          </rect><rect x="674.56" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-06: 0 contributions</title>
+          </rect><rect x="674.56" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-07: 0 contributions</title>
+          </rect><rect x="674.56" y="333" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2026-07-08: 2 contributions</title>
+          </rect><rect x="674.56" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-09: 0 contributions</title>
+          </rect><rect x="674.56" y="357" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2026-07-10: 1 contributions</title>
+          </rect><rect x="674.56" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-11: 0 contributions</title>
+          </rect><rect x="687.28" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-12: 0 contributions</title>
+          </rect><rect x="687.28" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-13: 0 contributions</title>
+          </rect><rect x="687.28" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-14: 0 contributions</title>
+          </rect><rect x="687.28" y="333" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2026-07-15: 3 contributions</title>
+          </rect><rect x="687.28" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-16: 0 contributions</title>
+          </rect><rect x="687.28" y="357" width="9" height="9" rx="2" class="heat-cell level-3">
+            <title>2026-07-17: 8 contributions</title>
+          </rect><rect x="687.28" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-18: 0 contributions</title>
+          </rect><rect x="700.00" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-19: 0 contributions</title>
+          </rect><rect x="700.00" y="309" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-20: 0 contributions</title>
+          </rect><rect x="700.00" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-21: 0 contributions</title>
+          </rect><rect x="700.00" y="333" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-22: 0 contributions</title>
+          </rect><rect x="700.00" y="345" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-23: 0 contributions</title>
+          </rect><rect x="700.00" y="357" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-24: 0 contributions</title>
+          </rect><rect x="700.00" y="369" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-25: 0 contributions</title>
+          </rect><rect x="712.72" y="297" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-26: 0 contributions</title>
+          </rect><rect x="712.72" y="309" width="9" height="9" rx="2" class="heat-cell level-4">
+            <title>2026-07-27: 12 contributions</title>
+          </rect><rect x="712.72" y="321" width="9" height="9" rx="2" class="heat-cell level-0">
+            <title>2026-07-28: 0 contributions</title>
+          </rect><rect x="712.72" y="333" width="9" height="9" rx="2" class="heat-cell level-1">
+            <title>2026-07-29: 1 contributions</title>
+          </rect>
+  <text x="28" y="416" class="section">Top languages</text>
+  <text x="388" y="416" class="section">Featured public repositories</text>
+  <rect x="28" y="438" width="144.48" height="12" fill="#4f46e5"/><rect x="172.48" y="438" width="92.88000000000001" height="12" fill="#6c63ff"/><rect x="265.36" y="438" width="51.6" height="12" fill="#8179ff"/><rect x="316.96000000000004" y="438" width="27.52" height="12" fill="#9993ff"/><rect x="344.48" y="438" width="13.76" height="12" fill="#b0acff"/>
+  
+          <g transform="translate(28 472)">
+            <circle cx="5" cy="-4" r="5" fill="#4f46e5"/>
+            <text x="17" class="small">JavaScript</text>
+            <text x="156" text-anchor="end" class="small">42%</text>
+          </g>
+          <g transform="translate(200 472)">
+            <circle cx="5" cy="-4" r="5" fill="#6c63ff"/>
+            <text x="17" class="small">TypeScript</text>
+            <text x="156" text-anchor="end" class="small">27%</text>
+          </g>
+          <g transform="translate(28 497)">
+            <circle cx="5" cy="-4" r="5" fill="#8179ff"/>
+            <text x="17" class="small">CSS</text>
+            <text x="156" text-anchor="end" class="small">15%</text>
+          </g>
+          <g transform="translate(200 497)">
+            <circle cx="5" cy="-4" r="5" fill="#9993ff"/>
+            <text x="17" class="small">SCSS</text>
+            <text x="156" text-anchor="end" class="small">8%</text>
+          </g>
+          <g transform="translate(28 522)">
+            <circle cx="5" cy="-4" r="5" fill="#b0acff"/>
+            <text x="17" class="small">HTML</text>
+            <text x="156" text-anchor="end" class="small">4%</text>
+          </g>
+  <text x="388" y="452" class="muted">No public repositories available.</text>
+  <line x1="28" y1="570" x2="732" y2="570" stroke="var(--divider)"/>
+  <text x="28" y="596" class="section">Repository topics</text>
+  <text x="28" y="623" class="muted">No public repository topics found.</text>
+  <path d="M2 655H758V679Q758 693 743 693H17Q2 693 2 679Z" class="footer-strip"/>
+  <text x="28" y="679" class="footer">Generated automatically from GitHub data</text>
+  <text x="732" y="679" text-anchor="end" class="footer">Updated 29 July 2026 · 09:00 · GitHub API</text>
+</svg>
